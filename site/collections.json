@@ -6,7 +6,7 @@
     "school": "IPSSI — Campus de Paris",
     "trainingDates": "",
     "session": "",
-    "cv": "cv-roman-corobca.pdf",
+    "cv": "cv-roman-corobca.pdf?v=20261013",
     "alternanceRhythm": "Une semaine en entreprise, puis une semaine en cours."
   },
   "projects": [
@@ -226,7 +226,7 @@
       "experiences": [
         {
           "date": "Actuellement",
-          "title": "Systèmes et réseaux — HUB IMMO",
+          "title": "Technicien systèmes et réseaux en alternance — HUB IMMO",
           "place": "HUB IMMO",
           "text": "Je contribue au bon fonctionnement des outils informatiques entre Paris et Versailles afin que les employés puissent saisir les données et suivre les quantités en stock.",
           "current": true
@@ -380,3 +380,4 @@
   },
   "levels": {}
 }
+
