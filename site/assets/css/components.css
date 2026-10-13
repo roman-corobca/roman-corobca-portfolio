@@ -25,3 +25,8 @@
     grid-template-columns:1fr
   }
 }
+
+.portrait-panel img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: contain; object-position: center; }
+
+@media (max-width: 600px) { .portrait-panel img { width: 90px; flex-shrink: 0; } }
+
