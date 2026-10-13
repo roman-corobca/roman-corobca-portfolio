@@ -124,6 +124,46 @@
       },
       "files": [],
       "images": []
+    },
+    {
+      "id": "leboncoin-groupe",
+      "title": "Plateforme de petites annonces — projet collectif",
+      "category": "Développement",
+      "tech": [
+        "PHP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "MVC",
+        "PDO"
+      ],
+      "description": "Projet de groupe leboncoin-bts-sio : une application pédagogique de petites annonces avec gestion des utilisateurs, favoris et messagerie.",
+      "status": "Projet collectif · code examiné",
+      "date": "2026-07-07",
+      "github": "https://github.com/patriciablbn/leboncoin-bts-sio",
+      "sections": {
+        "Contexte et objectif": "Projet scolaire réalisé en groupe. Développer une plateforme de petites annonces et organiser le code selon une architecture MVC.",
+        "Travail collectif": "Le dépôt affiche trois contributeurs : roman-corobca, patriciablbn et linamansour4106. Roman COROBCA est l’un des contributeurs, et n’est pas présenté comme auteur unique.",
+        "Fonctionnalités présentes dans le code": "Comptes utilisateurs et connexion ; création, modification et suppression d’annonces ; recherche et filtres ; favoris ; messagerie ; gestion du profil.",
+        "Architecture": "index.php oriente les demandes vers les contrôleurs. Les modèles utilisent PDO pour les accès MySQL. Les vues PHP, les styles CSS et le JavaScript composent l’interface.",
+        "Base de données": "Le fichier leboncoin.sql définit les tables users, annonces, favoris et messages. Les données d’exemple sont exclues de la copie de téléchargement.",
+        "Ma contribution personnelle": "À préciser avec les tâches effectuées, les fichiers concernés et les commits correspondants.",
+        "Résultats et limites": "Lecture du code uniquement : aucun test d’exécution ni résultat de performance n’est affirmé. Le fichier api/annonces.php appelé par la recherche dynamique n’est pas présent dans la branche main examinée.",
+        "Version consultée": "Branche main, commit e4a6829ec47a91fccc812797a5cb56320950b5f7, consultée le 13 octobre 2026.",
+        "Téléchargement": "Copie de présentation : code applicatif et structures SQL, sans configuration d’origine, données d’exemple ni images téléversées. Nécessite un serveur PHP et une base MySQL/MariaDB ; le code PHP ne s’exécute pas sur GitHub Pages."
+      },
+      "files": [
+        {
+          "name": "Télécharger le projet collectif (ZIP)",
+          "url": "documents/leboncoin-bts-sio-projet-groupe.zip"
+        },
+        {
+          "name": "Télécharger les explications (PDF)",
+          "url": "documents/guide-portfolio-projet-leboncoin.pdf"
+        }
+      ],
+      "images": []
     }
   ],
   "certifications": [
