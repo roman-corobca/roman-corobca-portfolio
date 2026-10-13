@@ -1,0 +1,52 @@
+{
+  "pages": [
+    [
+      "index",
+      "Accueil"
+    ],
+    [
+      "epreuves",
+      "Épreuves"
+    ],
+    [
+      "atelier",
+      "Atelier professionnel"
+    ],
+    [
+      "veille",
+      "Veille"
+    ],
+    [
+      "certifications",
+      "Certifications"
+    ],
+    [
+      "contact",
+      "Contact"
+    ]
+  ],
+  "redirects": {
+    "a-propos": "index.html#profil",
+    "competences": "index.html#competences",
+    "entreprise": "index.html#entreprise",
+    "ecole": "index.html#ecole",
+    "cv": "index.html#cv-inline",
+    "projets": "atelier.html",
+    "confidentialite": "index.html#confidentialite",
+    "guide": "index.html",
+    "gestion": "index.html",
+    "e5": "epreuves.html#e5",
+    "e6": "epreuves.html#e6",
+    "e6-reseau": "epreuves.html#reseau",
+    "e6-systeme": "epreuves.html#systeme",
+    "a1": "atelier.html#a1",
+    "a2": "atelier.html#a2",
+    "a3": "atelier.html#a3",
+    "a4": "atelier.html#a4",
+    "veille-5g-ia": "veille.html",
+    "veille-rgpd-cnil": "veille.html",
+    "veille-crypto": "veille.html",
+    "veille-cyber": "veille.html",
+    "veille-outils": "veille.html"
+  }
+}

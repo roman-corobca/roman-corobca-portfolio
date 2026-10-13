@@ -1,0 +1,256 @@
+<section class="profile-hero">
+  <div class="hero-copy">
+    <span class="eyebrow">Portfolio · En formation à IPSSI Paris</span>
+    <h1>Roman<br><span>COROBCA.</span></h1>
+    <p class="hero-subtitle">BTS SIO SISR<br>Systèmes, réseaux & support</p>
+    <p class="hero-description">Chez HUB IMMO, je contribue à l’accès aux outils de suivi des stocks entre Paris et Versailles. Je développe mes connaissances en systèmes et réseaux, avec un objectif de poursuite en cybersécurité.</p>
+    <div class="actions">
+      <a class="btn primary" href="cv-roman-corobca.pdf" download="Roman_COROBCA_CV.pdf" data-href="profile.cv">Télécharger mon CV<svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17H5a4 4 0 0 1-.7-7.94A6 6 0 0 1 16 6a4 4 0 0 1 3 11h-2M12 12v9m-3-3 3 3 3-3"></path>
+        </svg></a>
+      <button class="btn" id="cv-toggle" type="button" aria-expanded="false" aria-controls="cv-inline"><span data-cv-label>Voir mon CV</span><svg class="button-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" data-cv-icon="eye">
+          <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg><svg class="button-icon" data-cv-icon="close" hidden viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18"></path>
+        </svg></button>
+      <a class="btn" href="atelier.html">Découvrir mes projets<svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14m-5-5 5 5-5 5"></path>
+        </svg></a>
+    </div>
+    <a class="hero-contact" href="contact.html">Échanger avec moi <svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14m-5-5 5 5-5 5"></path>
+      </svg></a>
+  </div>
+  <div class="portrait-panel">
+    <img src="assets/roman-corobca.jpg" alt="Roman COROBCA" width="280" height="280" fetchpriority="high">
+    <div class="portrait-caption">
+      <span class="portrait-name">Roman COROBCA</span>
+      <span>IPSSI Paris · BTS SIO SISR</span>
+    </div>
+    <div class="portrait-note">
+      Systèmes 
+      &
+       réseaux
+      <br>
+      <strong>Cap sur la cybersécurité.</strong>
+    </div>
+  </div>
+</section>
+<div id="cv-inline" class="hero-cv-viewer" hidden>
+  <iframe class="cv-preview" title="CV de Roman COROBCA" data-src="cv-roman-corobca.pdf" data-pdf="profile.cv"></iframe>
+</div>
+<nav class="page-jump" aria-label="Rubriques de l’accueil">
+  <a href="#profil">Parcours</a>
+  <a href="#formation">BTS SIO</a>
+  <a href="#role">Mon rôle</a>
+  <a href="#entreprise">Entreprise</a>
+  <a href="#ecole">École</a>
+</nav>
+<section class="editorial-section" id="profil">
+  <div class="editorial-heading">
+    <span class="section-no">01</span>
+    <h2>Mon parcours</h2>
+  </div>
+  <div id="parcours" class="current-journey">
+    <article>
+      <span class="eyebrow">Formation actuelle</span>
+      <h3>BTS SIO · IPSSI Paris</h3>
+      <p>Depuis septembre 2026 · Option SISR</p>
+      <p class="small">Poursuite du BTS après une année à l’Institut F2I.</p>
+    </article>
+    <article>
+      <span class="eyebrow">Expérience actuelle</span>
+      <h3>HUB IMMO · Systèmes et réseaux</h3>
+      <p>Accès aux outils informatiques et suivi des stocks entre deux sites.</p>
+      <a class="text-link" href="#role">Découvrir mon rôle <svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14m-5-5 5 5-5 5"></path>
+        </svg></a>
+    </article>
+  </div>
+  <details class="refined-fold">
+    <summary>Voir les étapes de mon parcours<span class="fold-sign" aria-hidden="true">+</span></summary>
+    <div class="fold-content">
+      <div class="journey-columns">
+        <section aria-labelledby="journey-training">
+          <h3 id="journey-training">Formation</h3>
+          <ol class="journey-list">
+            <template data-repeat="pages.parcours.formations">
+              <li class="journey-step is-current" data-current="current"><article>
+                  <div class="journey-meta">
+                    <span class="journey-date" data-text="date"></span>
+                    <span class="tag" data-if="current">En cours</span>
+                  </div>
+                  <h4 data-text="title"></h4>
+                  <span class="journey-place" data-text="place"></span>
+                  <p data-text="text"></p>
+                </article></li>
+            </template>
+          </ol>
+        </section>
+        <section aria-labelledby="journey-work">
+          <h3 id="journey-work">Expériences</h3>
+          <ol class="journey-list">
+            <template data-repeat="pages.parcours.experiences">
+              <li class="journey-step is-current" data-current="current"><article>
+                  <div class="journey-meta">
+                    <span class="journey-date" data-text="date"></span>
+                    <span class="tag" data-if="current">En cours</span>
+                  </div>
+                  <h4 data-text="title"></h4>
+                  <span class="journey-place" data-text="place"></span>
+                  <p data-text="text"></p>
+                </article></li>
+            </template>
+          </ol>
+        </section>
+      </div>
+    </div>
+  </details>
+  <details class="refined-fold">
+    <summary>Mon apprentissage en autonomie<span class="fold-sign" aria-hidden="true">+</span></summary>
+    <div class="fold-content">
+      <p data-text="pages.autonomie.description"></p>
+    </div>
+  </details>
+  <p class="direction-note">Prochaine étape envisagée : une licence spécialisée en cybersécurité.</p>
+</section>
+<section class="editorial-section" id="formation">
+  <div class="editorial-heading">
+    <span class="section-no">02</span>
+    <h2>Le BTS SIO, option SISR</h2>
+  </div>
+  <p class="section-intro">Une formation aux services informatiques, orientée vers les infrastructures, les systèmes et les réseaux.</p>
+  <div class="focus-grid">
+    <article>
+      <svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="8" y="2" width="8" height="6" rx="1"></rect>
+        <path d="M12 8v5M4 13h16M4 13v3M20 13v3"></path>
+        <rect x="1" y="16" width="6" height="5" rx="1"></rect>
+        <rect x="17" y="16" width="6" height="5" rx="1"></rect>
+      </svg>
+      <h3>Systèmes et réseaux</h3>
+      <p>Comprendre les infrastructures et leur administration.</p>
+    </article>
+    <article>
+      <svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="7" rx="2"></rect>
+        <rect x="3" y="14" width="18" height="7" rx="2"></rect>
+        <path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"></path>
+      </svg>
+      <h3>Support informatique</h3>
+      <p>Accompagner les utilisateurs et maintenir l’accès aux services.</p>
+    </article>
+    <article>
+      <svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 2 3 6v6c0 5 9 10 9 10s9-5 9-10V6l-9-4Z"></path>
+        <path d="m8 12 3 3 5-6"></path>
+      </svg>
+      <h3>Cybersécurité</h3>
+      <p>Prendre en compte la protection des systèmes et des données.</p>
+    </article>
+  </div>
+</section>
+<section class="editorial-section" id="role">
+  <div class="editorial-heading">
+    <span class="section-no">03</span>
+    <h2>Mon rôle chez HUB IMMO</h2>
+  </div>
+  <p class="section-intro">Contribuer au bon fonctionnement de l’accès à l’application de stocks : les employés saisissent leurs données à Paris et consultent les informations hébergées à Versailles.</p>
+  <div class="architecture-case">
+    <div class="case-caption">
+      <span class="eyebrow">Le fonctionnement entre les deux sites</span>
+      <span>Accès distant</span>
+    </div>
+    <div class="architecture-nodes">
+      <article>
+        <svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="5" y="2" width="14" height="20" rx="2"></rect>
+          <path d="M11 18h2"></path>
+        </svg>
+        <span>Paris</span>
+        <h3>Une tablette</h3>
+        <p>Saisie et consultation des stocks.<br>Aucun serveur local.</p>
+      </article>
+      <div class="architecture-connection">
+        <span>Tailscale</span>
+        <span class="connection-line" aria-hidden="true"></span>
+        <small>Connexion aux ressources</small>
+      </div>
+      <article>
+        <svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="7" rx="2"></rect>
+          <rect x="3" y="14" width="18" height="7" rx="2"></rect>
+          <path d="M7 6.5h.01M7 17.5h.01M11 6.5h6M11 17.5h6"></path>
+        </svg>
+        <span>Versailles</span>
+        <h3>Le serveur</h3>
+        <p>Application et base de données.<br>Informations centralisées.</p>
+      </article>
+    </div>
+  </div>
+  <div class="responsibility-grid">
+    <article>
+      <span class="task-number">01</span>
+      <h3>Disponibilité des outils</h3>
+      <p>Contribuer au bon fonctionnement de l’environnement utilisé pour accéder aux données de stock.</p>
+    </article>
+    <article>
+      <span class="task-number">02</span>
+      <h3>Accès entre les sites</h3>
+      <p>Utiliser Proxmox et Tailscale dans l’environnement de l’entreprise.</p>
+    </article>
+    <article>
+      <span class="task-number">03</span>
+      <h3>Utilisation au quotidien</h3>
+      <p>Permettre aux employés de saisir et de consulter les quantités pour identifier les besoins d’achat.</p>
+    </article>
+  </div>
+  <details class="refined-fold">
+    <summary>L’environnement technique<span class="fold-sign" aria-hidden="true">+</span></summary>
+    <div class="fold-content">
+      <div id="competences">
+        <p>Outils utilisés dans l’entreprise :</p>
+        <span class="tag">Proxmox</span>
+        <span class="tag">Linux</span>
+        <span class="tag">Windows</span>
+        <span class="tag">Tailscale</span>
+        <p class="small">Ces outils décrivent mon environnement de travail ; ils ne constituent pas des niveaux d’expertise.</p>
+        <p><strong>Odoo Inventaire :</strong> piste envisagée pour le suivi des stocks, sans déploiement confirmé.</p>
+      </div>
+    </div>
+  </details>
+</section>
+<section class="editorial-section" id="entreprise">
+  <div class="editorial-heading">
+    <span class="section-no">04</span>
+    <h2>L’entreprise</h2>
+  </div>
+  <div class="company-overview">
+    <div>
+      <span class="eyebrow">HUB IMMO</span>
+      <h3>Une société à taille humaine.</h3>
+      <p>Une activité de location de courte durée, de type Airbnb et Booking.</p>
+    </div>
+    <div class="rhythm-note">
+      <span>Mon rythme d’alternance</span>
+      <strong>1 semaine en entreprise<br>1 semaine en cours</strong>
+    </div>
+  </div>
+</section>
+<section class="editorial-section" id="ecole">
+  <div class="editorial-heading">
+    <span class="section-no">05</span>
+    <h2>Mon école</h2>
+  </div>
+  <div class="school-overview">
+    <div>
+      <span class="eyebrow">IPSSI · Campus de Paris</span>
+      <h3>Une formation en informatique.</h3>
+      <p>Je poursuis mon BTS SIO SISR sur le campus de Paris. L’IPSSI propose des formations en informatique, cybersécurité et intelligence artificielle, du BTS au niveau bac +5.</p>
+    </div>
+    <a class="btn" href="https://ecole-ipssi.com/ecole-informatique-a-paris/" target="_blank" rel="noopener noreferrer">Découvrir IPSSI Paris<svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M5 12h14m-5-5 5 5-5 5"></path>
+      </svg></a>
+  </div>
+</section>

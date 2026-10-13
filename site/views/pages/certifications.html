@@ -1,0 +1,34 @@
+<div class="refined-pagehead">
+  <span class="eyebrow">Formation continue</span>
+  <h1>Mes attestations.</h1>
+  <p class="lead">Deux attestations obtenues, avec leurs justificatifs consultables et téléchargeables.</p>
+</div>
+<div class="certification-grid">
+  <template data-repeat="certifications">
+    <section id="anssi" class="certificate-card" data-id="id">
+      <div class="certificate-top">
+        <span class="certificate-check"><svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2 3 6v6c0 5 9 10 9 10s9-5 9-10V6l-9-4Z"></path>
+            <path d="m8 12 3 3 5-6"></path>
+          </svg></span>
+        <span class="eyebrow" data-text="org"></span>
+        <span class="certificate-date" data-text="date" data-format="date"></span>
+      </div>
+      <h2 data-text="title"></h2>
+      <p data-text="description"></p>
+      <ul class="certificate-modules">
+        <template data-repeat="skills">
+          <li data-text="."></li>
+        </template>
+      </ul>
+      <div class="actions">
+        <a class="btn" href="documents/secnumacademie-roman-corobca.pdf" target="_blank" rel="noopener noreferrer" data-href="pdf">Consulter<svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14m-5-5 5 5-5 5"></path>
+          </svg></a>
+        <a class="btn primary" href="documents/secnumacademie-roman-corobca.pdf" download data-href="pdf">Télécharger<svg class="ui-icon" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 17H5a4 4 0 0 1-.7-7.94A6 6 0 0 1 16 6a4 4 0 0 1 3 11h-2M12 12v9m-3-3 3 3 3-3"></path>
+          </svg></a>
+      </div>
+    </section>
+  </template>
+</div>

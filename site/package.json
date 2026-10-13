@@ -1,0 +1,6 @@
+{
+  "name": "roman-corobca-portfolio",
+  "private": true,
+  "type": "module",
+  "description": "Portfolio statique organisé en modèles, vues HTML et contrôleurs JavaScript."
+}

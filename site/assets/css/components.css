@@ -1,0 +1,27 @@
+[hidden] {
+  display:none!important
+}
+.project-card-image {
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+.project-images {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+  margin:25px 0
+}
+.project-images img {
+  width:100%;
+  height:auto;
+  border-radius:10px
+}
+.field p {
+  white-space:pre-line
+}
+@media(max-width:760px) {
+  .project-images {
+    grid-template-columns:1fr
+  }
+}

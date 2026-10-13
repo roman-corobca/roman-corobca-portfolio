@@ -2,7 +2,7 @@
   "profile": {
     "email": "",
     "linkedin": "https://www.linkedin.com/in/roman-corobca-700ba4301",
-    "github": "",
+    "github": "https://github.com/roman-corobca",
     "school": "IPSSI — Campus de Paris",
     "trainingDates": "",
     "session": "",
@@ -163,7 +163,9 @@
           "url": "documents/guide-portfolio-projet-leboncoin.pdf?v=presentation-juillet-2026"
         }
       ],
-      "images": []
+      "images": [
+        "assets/leboncoin-catalogue.png"
+      ]
     }
   ],
   "certifications": [
