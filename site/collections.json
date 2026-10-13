@@ -1,0 +1,340 @@
+{
+  "profile": {
+    "email": "",
+    "linkedin": "https://www.linkedin.com/in/roman-corobca-700ba4301",
+    "github": "",
+    "school": "IPSSI — Campus de Paris",
+    "trainingDates": "",
+    "session": "",
+    "cv": "cv-roman-corobca.pdf",
+    "alternanceRhythm": "Une semaine en entreprise, puis une semaine en cours."
+  },
+  "projects": [
+    {
+      "id": "active-directory",
+      "title": "Active Directory",
+      "category": "Systèmes",
+      "tech": [
+        "Windows Server",
+        "Active Directory",
+        "GPO"
+      ],
+      "description": "Emplacement pour documenter un domaine, les comptes, les groupes et les stratégies.",
+      "status": "À compléter",
+      "date": "",
+      "sections": {
+        "Objectifs": "",
+        "Architecture": "",
+        "Configuration du domaine": "",
+        "Utilisateurs, groupes et stratégies": "",
+        "Sécurité et tests": "",
+        "Captures et documentation": ""
+      },
+      "files": [],
+      "images": []
+    },
+    {
+      "id": "glpi",
+      "title": "GLPI & support informatique",
+      "category": "Systèmes",
+      "tech": [
+        "GLPI",
+        "Inventaire",
+        "Tickets"
+      ],
+      "description": "Emplacement pour présenter une installation GLPI et l’organisation du support.",
+      "status": "À compléter",
+      "date": "",
+      "sections": {
+        "Présentation de GLPI": "",
+        "Installation et configuration": "",
+        "Gestion des équipements": "",
+        "Gestion des tickets": "",
+        "Inventaire et organisation du support": "",
+        "Tests et résultats": ""
+      },
+      "files": [],
+      "images": []
+    },
+    {
+      "id": "cisco",
+      "title": "Infrastructure Cisco",
+      "category": "Réseaux",
+      "tech": [
+        "Packet Tracer",
+        "TCP/IP",
+        "VLAN"
+      ],
+      "description": "Emplacement pour une topologie réseau, ses configurations et ses tests.",
+      "status": "À compléter",
+      "date": "",
+      "sections": {
+        "Présentation du besoin": "",
+        "Topologie Packet Tracer": "",
+        "Plan d’adressage IP": "",
+        "VLAN et routage": "",
+        "Configuration des équipements": "",
+        "DHCP et DNS": "",
+        "Tests de connectivité": "",
+        "Captures de la topologie": ""
+      },
+      "files": [],
+      "images": []
+    },
+    {
+      "id": "virtualisation",
+      "title": "Laboratoire de virtualisation",
+      "category": "Virtualisation",
+      "tech": [
+        "Machines virtuelles"
+      ],
+      "description": "Emplacement pour un environnement de test et sa documentation.",
+      "status": "À compléter",
+      "date": "",
+      "sections": {
+        "Objectifs": "",
+        "Architecture": "",
+        "Installation": "",
+        "Tests": "",
+        "Résultats": "",
+        "Bilan": ""
+      },
+      "files": [],
+      "images": []
+    },
+    {
+      "id": "cybersecurite",
+      "title": "Laboratoire cybersécurité",
+      "category": "Cybersécurité",
+      "tech": [
+        "Sécurité",
+        "Laboratoire"
+      ],
+      "description": "Emplacement pour documenter des tests autorisés et des mesures de protection.",
+      "status": "À compléter",
+      "date": "",
+      "sections": {
+        "Objectifs du projet": "",
+        "Environnement de laboratoire": "",
+        "Risques étudiés": "",
+        "Mesures de sécurité": "",
+        "Outils utilisés": "",
+        "Tests autorisés": "",
+        "Résultats et recommandations": ""
+      },
+      "files": [],
+      "images": []
+    }
+  ],
+  "certifications": [
+    {
+      "id": "anssi",
+      "title": "SecNumacadémie",
+      "org": "ANSSI",
+      "date": "2026-02-02",
+      "description": "Attestation de suivi des quatre modules du MOOC.",
+      "skills": [
+        "Panorama de la SSI : 100 %",
+        "Sécurité de l’authentification : 100 %",
+        "Sécurité sur Internet : 94 %",
+        "Sécurité du poste de travail et nomadisme : 96 %"
+      ],
+      "pdf": "documents/secnumacademie-roman-corobca.pdf"
+    },
+    {
+      "id": "cisco-cyber",
+      "title": "Introduction to Cybersecurity",
+      "org": "Cisco Networking Academy",
+      "date": "2026-02-02",
+      "description": "Certificat délivré à Roman COROBCA.",
+      "skills": [
+        "Introduction à la cybersécurité"
+      ],
+      "pdf": "documents/cisco-introduction-cybersecurity-roman-corobca.pdf"
+    }
+  ],
+  "watch": [],
+  "e5": [],
+  "pages": {
+    "a-propos": {
+      "Parcours personnel": "Depuis septembre 2026, je poursuis mon BTS SIO à l’IPSSI, à Paris, après une année à l’Institut F2I, à Vincennes, de septembre 2025 à juillet 2026.\n\nDe septembre 2024 à juin 2025, j’ai suivi une MC Services Numériques aux Organisations à La Salle Saint-Nicolas, à Issy-les-Moulineaux, orientée réseaux et cybersécurité. Sur cette même période, j’ai également validé six modules en autodidacte sur OpenClassrooms, autour de la cybersécurité, de Linux, du deep learning, de l’IA et des réseaux TCP/IP.\n\nDe décembre 2024 à juin 2026, j’ai travaillé comme développeur web en alternance chez HUB IMMO, à Versailles. Mon parcours comprend aussi une expérience de mécanicien automobile chez Diseliok/Resor MD, de janvier 2021 à avril 2022, et un passage dans le service de déminage de l’Armée de Terre, d’octobre 2021 à mars 2022, à Chisinau, en Moldavie.\n\nAujourd’hui, je souhaite approfondir l’administration des systèmes et des réseaux, puis poursuivre en licence spécialisée en cybersécurité."
+    },
+    "parcours": {
+      "formations": [
+        {
+          "date": "Depuis septembre 2026",
+          "title": "BTS SIO — IPSSI",
+          "place": "Paris",
+          "text": "Poursuite de ma formation en BTS SIO, option SISR.",
+          "current": true
+        },
+        {
+          "date": "Septembre 2025 — juillet 2026",
+          "title": "BTS SIO — Institut F2I",
+          "place": "Vincennes",
+          "text": "Une année de formation en services informatiques aux organisations."
+        },
+        {
+          "date": "Septembre 2024 — juin 2025",
+          "title": "MC Services Numériques aux Organisations",
+          "place": "La Salle Saint-Nicolas · Issy-les-Moulineaux",
+          "text": "Formation orientée réseaux et cybersécurité."
+        }
+      ],
+      "experiences": [
+        {
+          "date": "Actuellement",
+          "title": "Systèmes et réseaux — HUB IMMO",
+          "place": "HUB IMMO",
+          "text": "Je contribue au bon fonctionnement des outils informatiques entre Paris et Versailles afin que les employés puissent saisir les données et suivre les quantités en stock.",
+          "current": true
+        },
+        {
+          "date": "Décembre 2024 — juin 2026",
+          "title": "Développeur web en alternance",
+          "place": "HUB IMMO · Versailles",
+          "text": "Expérience en développement web, avec un projet de site internet en PHP, HTML et CSS."
+        },
+        {
+          "date": "Janvier 2021 — avril 2022",
+          "title": "Mécanicien automobile",
+          "place": "Diseliok / Resor MD · Chisinau, Moldavie",
+          "text": "Une expérience professionnelle dans la mécanique automobile."
+        },
+        {
+          "date": "Octobre 2021 — mars 2022",
+          "title": "Militaire — service de déminage",
+          "place": "Armée de Terre · Chisinau, Moldavie",
+          "text": "Une expérience au sein du service de déminage."
+        }
+      ]
+    },
+    "role": {
+      "Fonction et position dans le service": "Chez HUB IMMO, je contribue au bon fonctionnement de l’accès à l’application de gestion des stocks. À Paris, les employés utilisent une tablette, sans serveur local. Elle se connecte au serveur situé à Versailles, qui héberge l’application et sa base de données, pour permettre la saisie des informations et la consultation des quantités en stock.",
+      "Missions réalisées": "Contribuer au bon fonctionnement de l’environnement informatique utilisé entre Paris et Versailles.\nFaire en sorte que les employés puissent accéder aux outils et saisir les informations nécessaires au suivi des stocks.\nContribuer à la disponibilité des informations sur les quantités en stock pour aider à identifier les besoins d’achat.",
+      "Outils utilisés": "Proxmox, Linux, Windows et Tailscale. Odoo Inventaire reste une application proposée pour le suivi des stocks.",
+      "Responsabilités et compétences développées": "Communication entre les sites, partage des informations et identification des besoins."
+    },
+    "missions": [
+      {
+        "title": "Systèmes et disponibilité des outils de gestion des stocks",
+        "objective": "Contribuer à la disponibilité du serveur de Versailles qui héberge l’application et la base de données, pour permettre l’accès depuis la tablette utilisée à Paris.",
+        "tasks": [
+          "Contribuer au bon fonctionnement de l’environnement Linux utilisé côté serveur.",
+          "Permettre l’accès à l’application et aux données de stock depuis la tablette de Paris.",
+          "Contribuer à la disponibilité du service centralisé à Versailles."
+        ],
+        "toDocument": [
+          "Préciser les services installés et les opérations de configuration auxquelles je participe.",
+          "Décrire la gestion des comptes et des droits d’accès si elle fait partie de mes interventions.",
+          "Documenter les mises à jour, l’analyse des journaux et les mesures de sécurité que je réalise réellement.",
+          "Ajouter les procédures techniques rédigées pour l’accès aux outils et leur utilisation."
+        ]
+      },
+      {
+        "title": "Virtualisation et accès distant de la tablette au serveur",
+        "objective": "Contribuer au fonctionnement de l’environnement Proxmox et de la connexion entre la tablette de Paris et le serveur de Versailles.",
+        "tasks": [
+          "Utiliser Proxmox dans l’environnement informatique de l’entreprise.",
+          "Utiliser Tailscale pour l’accès aux ressources entre Paris et Versailles.",
+          "Contribuer au fonctionnement de l’accès distant à l’application hébergée à Versailles."
+        ],
+        "toDocument": [
+          "Préciser les machines virtuelles concernées et mes interventions dans Proxmox.",
+          "Décrire les ressources et les réseaux virtuels que je configure réellement.",
+          "Documenter ma participation à la configuration des accès Tailscale et aux vérifications de connexion.",
+          "Préciser les sauvegardes, restaurations ou opérations de migration auxquelles je participe, si ces activités font partie de mon rôle."
+        ]
+      },
+      {
+        "title": "Support aux utilisateurs et fonctionnement du suivi des stocks",
+        "objective": "Permettre aux employés de saisir les informations sur la tablette et de consulter les quantités conservées dans la base de données du serveur.",
+        "tasks": [
+          "Contribuer au bon fonctionnement de l’accès à l’application depuis la tablette.",
+          "Faire en sorte que les employés puissent saisir et consulter les données nécessaires au suivi des stocks.",
+          "Contribuer à la disponibilité des informations pour aider l’entreprise à identifier ses besoins d’achat."
+        ],
+        "toDocument": [
+          "Ajouter des exemples d’incidents d’accès, de connexion ou d’utilisation que j’ai réellement traités.",
+          "Préciser l’accompagnement et les conseils apportés aux employés.",
+          "Décrire les tests effectués après mes interventions et les résultats observés.",
+          "Présenter les améliorations proposées pour la disponibilité, la simplicité d’utilisation ou la sécurité des outils."
+        ]
+      }
+    ],
+    "entreprise": {
+      "Présentation de l’entreprise": "HUB IMMO est une société à taille humaine spécialisée dans la location de courte durée, de type Airbnb et Booking.",
+      "Secteur d’activité": "Location de courte durée et hébergement.",
+      "Mon activité": "Contribuer au bon fonctionnement de l’environnement informatique entre Paris et Versailles pour permettre la saisie des données et le suivi des stocks.",
+      "Rythme d’alternance": "Une semaine en entreprise, puis une semaine en cours."
+    },
+    "tools": [
+      {
+        "name": "Proxmox",
+        "category": "Virtualisation",
+        "description": "Plateforme de virtualisation permettant de gérer des machines virtuelles et des conteneurs depuis une interface web.",
+        "detail": "Les machines et services utilisés dans cette mission seront précisés dans la documentation technique.",
+        "url": "https://www.proxmox.com/en/products/proxmox-virtual-environment/features",
+        "confirmed": true
+      },
+      {
+        "name": "Linux",
+        "category": "Système d’exploitation",
+        "description": "Système d’exploitation utilisé dans mon environnement informatique.",
+        "detail": "La distribution, la version et les services que j’utilise restent à préciser.",
+        "confirmed": true
+      },
+      {
+        "name": "Windows",
+        "category": "Système d’exploitation",
+        "description": "Système d’exploitation également utilisé dans l’environnement informatique de HUB IMMO.",
+        "detail": "Les versions et les équipements concernés seront précisés dans la documentation technique.",
+        "confirmed": true
+      },
+      {
+        "name": "Tailscale",
+        "category": "Accès distant — solution utilisée",
+        "description": "Solution utilisée pour l’accès aux ressources entre la tablette de Paris et le serveur de Versailles.",
+        "detail": "Les appareils connectés, les droits et la configuration exacte restent à documenter.",
+        "url": "https://tailscale.com/docs/features/site-to-site",
+        "confirmed": true
+      },
+      {
+        "name": "Odoo Inventaire",
+        "category": "Gestion des stocks",
+        "description": "Application de gestion des stocks permettant d’organiser les produits et leurs quantités par emplacement. Une piste pour distinguer les stocks de Paris et de Versailles.",
+        "detail": "Proposition à évaluer avec HUB IMMO. Aucun déploiement ni usage actuel n’est affirmé. Prévoir les emplacements des deux sites, la saisie des mouvements et un essai avec les employés avant de retenir la solution.",
+        "url": "https://www.odoo.com/documentation/master/applications/inventory_and_mrp/inventory/warehouses_storage/inventory_management.html",
+        "confirmed": false,
+        "status": "Solution proposée"
+      }
+    ],
+    "architecture": {
+      "client": "Tablette à Paris — aucun serveur local",
+      "connection": "Tailscale — accès distant",
+      "server": "Serveur à Versailles — application et base de données"
+    },
+    "autonomie": {
+      "title": "Ce que j’apprends en autonomie",
+      "organism": "OpenClassrooms",
+      "period": "Septembre 2024 — juin 2025",
+      "description": "En complément de ma formation, j’apprends en autonomie avec OpenClassrooms. Mon CV mentionne six modules validés en cybersécurité, Linux, deep learning, intelligence artificielle et réseaux TCP/IP, dont deux modules en réseaux TCP/IP."
+    },
+    "ecole": {
+      "Mon établissement": "IPSSI — Campus de Paris, dans le 12e arrondissement.",
+      "Présentation de l’école": "IPSSI propose des formations en informatique, cybersécurité et intelligence artificielle, du BTS aux cursus de niveau bac +5.",
+      "Le campus de Paris": "L’école présente des salles équipées, des laboratoires techniques et des espaces collaboratifs pour les projets informatiques.",
+      "Ma formation": "BTS SIO option SISR : Solutions d’Infrastructure, Systèmes et Réseaux. Un diplôme d’État de niveau bac +2 orienté vers les infrastructures et leur administration.",
+      "Mon parcours à IPSSI": "Depuis septembre 2026, après une année de BTS SIO à l’Institut F2I.",
+      "Mon rythme d’alternance": "Une semaine en entreprise chez HUB IMMO, puis une semaine en cours."
+    },
+    "watchMethod": {
+      "project": "Veille technique Cybersecurite",
+      "chat": "Veille cybersécurité hebdomadaire",
+      "frequency": "Hebdomadaire",
+      "theme": "Cybersécurité des systèmes et des réseaux",
+      "purpose": "Suivre les actualités utiles à mon BTS SIO SISR en m’appuyant sur des sources vérifiables."
+    }
+  },
+  "levels": {}
+}
