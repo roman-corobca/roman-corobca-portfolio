@@ -6,7 +6,7 @@
     "school": "IPSSI — Campus de Paris",
     "trainingDates": "",
     "session": "",
-    "cv": "cv-roman-corobca.pdf?v=20261013",
+    "cv": "cv-roman-corobca.pdf?v=photo-20261013",
     "alternanceRhythm": "Une semaine en entreprise, puis une semaine en cours."
   },
   "projects": [
@@ -58,46 +58,45 @@
     },
     {
       "id": "cisco",
-      "title": "Infrastructure Cisco",
+      "title": "Cisco Packet Tracer — architectures réseau",
       "category": "Réseaux",
       "tech": [
-        "Packet Tracer",
-        "TCP/IP",
-        "VLAN"
+        "Cisco Packet Tracer",
+        "VLAN",
+        "DHCP",
+        "VPN",
+        "Routage"
       ],
-      "description": "Emplacement pour une topologie réseau, ses configurations et ses tests.",
-      "status": "À compléter",
+      "description": "Conception et simulation d’architectures réseau dans le cadre de projets scolaires à l’Institut F2I.",
+      "status": "Réalisé · documentation à compléter",
       "date": "",
       "sections": {
-        "Présentation du besoin": "",
-        "Topologie Packet Tracer": "",
-        "Plan d’adressage IP": "",
-        "VLAN et routage": "",
-        "Configuration des équipements": "",
-        "DHCP et DNS": "",
-        "Tests de connectivité": "",
-        "Captures de la topologie": ""
+        "Contexte": "Projet scolaire — Institut F2I.",
+        "Travaux réalisés": "VLAN, DHCP et VPN ; communications inter-routeurs et routage ; conception et simulation d’architectures.",
+        "Documentation": "Les topologies, plans d’adressage, configurations et tests détaillés restent à documenter."
       },
       "files": [],
       "images": []
     },
     {
       "id": "virtualisation",
-      "title": "Laboratoire de virtualisation",
+      "title": "Systèmes et virtualisation",
       "category": "Virtualisation",
       "tech": [
-        "Machines virtuelles"
+        "Windows Server",
+        "Windows",
+        "Linux",
+        "pfSense",
+        "Proxmox"
       ],
-      "description": "Emplacement pour un environnement de test et sa documentation.",
-      "status": "À compléter",
+      "description": "Projets scolaires à l’Institut F2I autour des systèmes, des clients et de la virtualisation.",
+      "status": "Réalisé · documentation à compléter",
       "date": "",
       "sections": {
-        "Objectifs": "",
-        "Architecture": "",
-        "Installation": "",
-        "Tests": "",
-        "Résultats": "",
-        "Bilan": ""
+        "Contexte": "Projets scolaires — Institut F2I.",
+        "Environnements étudiés": "Windows Server avec clients Windows ; serveur Linux avec clients Linux.",
+        "Infrastructure": "Administration de pare-feu pfSense et utilisation de Proxmox.",
+        "Documentation": "Les architectures, configurations et preuves de validation sont à compléter."
       },
       "files": [],
       "images": []
@@ -166,6 +165,59 @@
       "images": [
         "assets/leboncoin-catalogue.png"
       ]
+    },
+    {
+      "id": "base-films",
+      "title": "Base de données de films",
+      "category": "Développement",
+      "tech": [
+        "MySQL"
+      ],
+      "description": "Projet scolaire à l’Institut F2I : création et gestion de données de films avec MySQL.",
+      "status": "Réalisé · documentation à compléter",
+      "date": "",
+      "sections": {
+        "Contexte": "Projet scolaire — Institut F2I.",
+        "Fonctionnalités": "Création, ajout, modification et suppression de données avec MySQL.",
+        "Documentation": "Les captures, fichiers et résultats détaillés seront ajoutés ultérieurement."
+      },
+      "files": [],
+      "images": []
+    },
+    {
+      "id": "calculateur",
+      "title": "Calculateur",
+      "category": "Développement",
+      "tech": [],
+      "description": "Projet scolaire de programmation réalisé à l’Institut F2I.",
+      "status": "Réalisé · documentation à compléter",
+      "date": "",
+      "sections": {
+        "Contexte": "Projet scolaire — Institut F2I.",
+        "Présentation": "Réalisation d’un calculateur. Le langage, les fonctions et la documentation sont à préciser."
+      },
+      "files": [],
+      "images": []
+    },
+    {
+      "id": "site-hub-immo",
+      "title": "Site internet — HUB IMMO",
+      "category": "Développement",
+      "tech": [
+        "PHP",
+        "HTML",
+        "CSS"
+      ],
+      "description": "Projet de site internet réalisé en alternance chez HUB IMMO en 2025.",
+      "status": "Réalisé · documentation à compléter",
+      "date": "2025",
+      "sections": {
+        "Contexte": "Alternance — HUB IMMO, 2025.",
+        "Technologies": "PHP, HTML et CSS.",
+        "Documentation": "Les fonctionnalités, captures et documents autorisés seront précisés ultérieurement."
+      },
+      "files": [],
+      "images": []
     }
   ],
   "certifications": [
