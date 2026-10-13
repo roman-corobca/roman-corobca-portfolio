@@ -139,7 +139,7 @@
         "PDO"
       ],
       "description": "Projet de groupe leboncoin-bts-sio : une application pédagogique de petites annonces avec gestion des utilisateurs, favoris et messagerie.",
-      "status": "Projet collectif · code examiné",
+      "status": "Projet collectif · démonstration locale",
       "date": "2026-07-07",
       "github": "https://github.com/patriciablbn/leboncoin-bts-sio",
       "sections": {
@@ -149,7 +149,7 @@
         "Architecture": "index.php oriente les demandes vers les contrôleurs. Les modèles utilisent PDO pour les accès MySQL. Les vues PHP, les styles CSS et le JavaScript composent l’interface.",
         "Base de données": "Le fichier leboncoin.sql définit les tables users, annonces, favoris et messages. Les données d’exemple sont exclues de la copie de téléchargement.",
         "Ma contribution personnelle": "À préciser avec les tâches effectuées, les fichiers concernés et les commits correspondants.",
-        "Résultats et limites": "Lecture du code uniquement : aucun test d’exécution ni résultat de performance n’est affirmé. Le fichier api/annonces.php appelé par la recherche dynamique n’est pas présent dans la branche main examinée.",
+        "Résultats et limites": "Démonstration locale sur une base fictive : catalogue, inscription, connexion, filtre serveur par catégorie, création sans photo, modification de prix, ajout aux favoris et envoi de message. Ces essais documentent la session de préparation du guide et ne sont pas des tests personnels attribués à Roman. Le filtre AJAX échoue car api/annonces.php est absent. Voir le guide illustré pour les conditions et les limites.",
         "Version consultée": "Branche main, commit e4a6829ec47a91fccc812797a5cb56320950b5f7, consultée le 13 octobre 2026.",
         "Téléchargement": "Copie de présentation : code applicatif et structures SQL, sans configuration d’origine, données d’exemple ni images téléversées. Nécessite un serveur PHP et une base MySQL/MariaDB ; le code PHP ne s’exécute pas sur GitHub Pages."
       },
@@ -159,7 +159,7 @@
           "url": "documents/leboncoin-bts-sio-projet-groupe.zip"
         },
         {
-          "name": "Télécharger les explications (PDF)",
+          "name": "Télécharger le guide illustré (PDF)",
           "url": "documents/guide-portfolio-projet-leboncoin.pdf"
         }
       ],
