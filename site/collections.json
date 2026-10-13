@@ -67,11 +67,11 @@
         "VPN",
         "Routage"
       ],
-      "description": "Conception et simulation d’architectures réseau dans le cadre de projets scolaires à l’Institut F2I.",
+      "description": "Conception et simulation d’architectures réseau dans le cadre de projets scolaires.",
       "status": "Réalisé · documentation à compléter",
       "date": "",
       "sections": {
-        "Contexte": "Projet scolaire — Institut F2I.",
+        "Contexte": "Projet scolaire.",
         "Travaux réalisés": "VLAN, DHCP et VPN ; communications inter-routeurs et routage ; conception et simulation d’architectures.",
         "Documentation": "Les topologies, plans d’adressage, configurations et tests détaillés restent à documenter."
       },
@@ -89,11 +89,11 @@
         "pfSense",
         "Proxmox"
       ],
-      "description": "Projets scolaires à l’Institut F2I autour des systèmes, des clients et de la virtualisation.",
+      "description": "Projets scolaires autour des systèmes, des clients et de la virtualisation.",
       "status": "Réalisé · documentation à compléter",
       "date": "",
       "sections": {
-        "Contexte": "Projets scolaires — Institut F2I.",
+        "Contexte": "Projets scolaires.",
         "Environnements étudiés": "Windows Server avec clients Windows ; serveur Linux avec clients Linux.",
         "Infrastructure": "Administration de pare-feu pfSense et utilisation de Proxmox.",
         "Documentation": "Les architectures, configurations et preuves de validation sont à compléter."
@@ -173,11 +173,11 @@
       "tech": [
         "MySQL"
       ],
-      "description": "Projet scolaire à l’Institut F2I : création et gestion de données de films avec MySQL.",
+      "description": "Projet scolaire : création et gestion de données de films avec MySQL.",
       "status": "Réalisé · documentation à compléter",
       "date": "",
       "sections": {
-        "Contexte": "Projet scolaire — Institut F2I.",
+        "Contexte": "Projet scolaire.",
         "Fonctionnalités": "Création, ajout, modification et suppression de données avec MySQL.",
         "Documentation": "Les captures, fichiers et résultats détaillés seront ajoutés ultérieurement."
       },
@@ -189,11 +189,11 @@
       "title": "Calculateur",
       "category": "Développement",
       "tech": [],
-      "description": "Projet scolaire de programmation réalisé à l’Institut F2I.",
+      "description": "Projet scolaire de programmation réalisé.",
       "status": "Réalisé · documentation à compléter",
       "date": "",
       "sections": {
-        "Contexte": "Projet scolaire — Institut F2I.",
+        "Contexte": "Projet scolaire.",
         "Présentation": "Réalisation d’un calculateur. Le langage, les fonctions et la documentation sont à préciser."
       },
       "files": [],
@@ -251,22 +251,16 @@
   "e5": [],
   "pages": {
     "a-propos": {
-      "Parcours personnel": "Depuis septembre 2026, je poursuis mon BTS SIO à l’IPSSI, à Paris, après une année à l’Institut F2I, à Vincennes, de septembre 2025 à juillet 2026.\n\nDe septembre 2024 à juin 2025, j’ai suivi une MC Services Numériques aux Organisations à La Salle Saint-Nicolas, à Issy-les-Moulineaux, orientée réseaux et cybersécurité. Sur cette même période, j’ai également validé six modules en autodidacte sur OpenClassrooms, autour de la cybersécurité, de Linux, du deep learning, de l’IA et des réseaux TCP/IP.\n\nDe décembre 2024 à juin 2026, j’ai travaillé comme développeur web en alternance chez HUB IMMO, à Versailles. Mon parcours comprend aussi une expérience de mécanicien automobile chez Diseliok/Resor MD, de janvier 2021 à avril 2022, et un passage dans le service de déminage de l’Armée de Terre, d’octobre 2021 à mars 2022, à Chisinau, en Moldavie.\n\nAujourd’hui, je souhaite approfondir l’administration des systèmes et des réseaux, puis poursuivre en licence spécialisée en cybersécurité."
+      "Parcours personnel": "Depuis septembre 2025, je suis en formation en BTS SIO à l’IPSSI, à Paris.\n\nDe septembre 2024 à juin 2025, j’ai suivi une MC Services Numériques aux Organisations à La Salle Saint-Nicolas, à Issy-les-Moulineaux, orientée réseaux et cybersécurité. Sur cette même période, j’ai également validé six modules en autodidacte sur OpenClassrooms, autour de la cybersécurité, de Linux, du deep learning, de l’IA et des réseaux TCP/IP.\n\nDe décembre 2024 à juin 2026, j’ai travaillé comme développeur web en alternance chez HUB IMMO, à Versailles. Mon parcours comprend aussi une expérience de mécanicien automobile chez Diseliok/Resor MD, de janvier 2021 à avril 2022, et un passage dans le service de déminage de l’Armée de Terre, d’octobre 2021 à mars 2022, à Chisinau, en Moldavie.\n\nAujourd’hui, je souhaite approfondir l’administration des systèmes et des réseaux, puis poursuivre en licence spécialisée en cybersécurité."
     },
     "parcours": {
       "formations": [
         {
-          "date": "Depuis septembre 2026",
+          "date": "Depuis septembre 2025",
           "title": "BTS SIO — IPSSI",
           "place": "Paris",
           "text": "Poursuite de ma formation en BTS SIO, option SISR.",
           "current": true
-        },
-        {
-          "date": "Septembre 2025 — juillet 2026",
-          "title": "BTS SIO — Institut F2I",
-          "place": "Vincennes",
-          "text": "Une année de formation en services informatiques aux organisations."
         },
         {
           "date": "Septembre 2024 — juin 2025",
@@ -419,7 +413,7 @@
       "Présentation de l’école": "IPSSI propose des formations en informatique, cybersécurité et intelligence artificielle, du BTS aux cursus de niveau bac +5.",
       "Le campus de Paris": "L’école présente des salles équipées, des laboratoires techniques et des espaces collaboratifs pour les projets informatiques.",
       "Ma formation": "BTS SIO option SISR : Solutions d’Infrastructure, Systèmes et Réseaux. Un diplôme d’État de niveau bac +2 orienté vers les infrastructures et leur administration.",
-      "Mon parcours à IPSSI": "Depuis septembre 2026, après une année de BTS SIO à l’Institut F2I.",
+      "Mon parcours à IPSSI": "Formation en BTS SIO à l’IPSSI, à Paris.",
       "Mon rythme d’alternance": "Une semaine en entreprise chez HUB IMMO, puis une semaine en cours."
     },
     "watchMethod": {
