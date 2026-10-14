@@ -1,6 +1,7 @@
 <details class="watch-headline" data-watch-id="id">
   <summary><span class="watch-headline-title" data-text="title"></span><span class="watch-headline-meta"><span data-text="source"></span> · <span data-text="date" data-format="date"></span></span></summary>
   <div class="watch-headline-body">
+    <p class="eyebrow" data-text="category" data-if="category"></p>
     <p data-text="summary"></p>
     <section data-if="actions">
       <h4>À retenir / actions utiles</h4>
@@ -14,7 +15,11 @@
       <h4>Intérêt pour les entreprises</h4>
       <p data-text="impact"></p>
     </section>
+    <section data-if="analysis"><h4>Analyse et lien avec mon parcours</h4><p data-text="analysis"></p></section>
+    <p class="small" data-if="updated">Source mise à jour le <span data-text="updated" data-format="date"></span></p>
     <p class="small">Publié le <span data-text="date" data-format="date"></span> · Consulté le <span data-text="consulted" data-format="date"></span></p>
     <a class="text-link" data-href="url" target="_blank" rel="noopener noreferrer">Lire la source originale ↗</a>
+    <section data-if="sources"><h4>Source complémentaire</h4><template data-repeat="sources"><p><a class="text-link" data-text="name" data-href="url" target="_blank" rel="noopener noreferrer"></a></p></template></section>
   </div>
 </details>
+

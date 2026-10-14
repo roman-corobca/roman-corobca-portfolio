@@ -247,7 +247,30 @@
       "pdf": "documents/cisco-introduction-cybersecurity-roman-corobca.pdf"
     }
   ],
-  "watch": [],
+  "watch": [
+    {
+      "id": "refrigeration-supermarches-20261012",
+      "title": "Réfrigérateurs de supermarchés piratés : le risque dépasse les données",
+      "category": "Cybersécurité · Systèmes industriels et objets connectés",
+      "date": "2026-10-12",
+      "updated": "2026-10-13",
+      "consulted": "2026-10-14",
+      "week": "2026-10-12",
+      "source": "CERT-FR / ANSSI",
+      "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/",
+      "summary": "Des magasins de plusieurs enseignes, dont Intermarché, ont subi une perturbation de leurs installations frigorifiques dans la nuit du 11 au 12 octobre 2026. TF1 Info rapporte une cyberattaque et des pertes de produits. Cela ne signifie pas que tous les magasins de ces enseignes ont été touchés.",
+      "technical": "Le CERT-FR confirme des compromissions de contrôleurs de réfrigération Danfoss AK-SM/AK-SC et Copeland/Dixell XWEB. Ces équipements permettent la gestion à distance. Une interface d’administration exposée à Internet met le fonctionnement physique en danger. L’alerte officielle ne précise pas un mécanisme unique d’intrusion pour tous les cas.",
+      "actions": "Inventorier les contrôleurs et retirer leur accès direct depuis Internet, en coordination avec le frigoriste et après vérification des contrats d’assurance. Contrôler les paramètres, notamment le dégivrage. Protéger l’accès distant par VPN ou réseau sécurisé. Appliquer les recommandations du constructeur : firmware, mots de passe et configuration. Pour un équipement compromis, prévoir restauration et reconfiguration ; une réinitialisation seule ne corrige pas l’exposition ni la fin de support.",
+      "impact": "L’article de TF1 Info décrit des conséquences sur la chaîne du froid et les marchandises. Pour une entreprise, un incident informatique peut donc interrompre l’activité et entraîner des pertes matérielles. Il faut prévoir la continuité du service avec les équipes techniques et les prestataires.",
+      "analysis": "Analyse proposée : ce cas illustre le lien entre systèmes, réseaux et sécurité des équipements connectés. Dans un environnement comme celui de HUB IMMO, je retiens l’importance de limiter les accès distants et de vérifier les configurations. La supervision et la segmentation constituent aussi des pistes de prévention à étudier, sans supposer une infrastructure identique à celle des supermarchés.",
+      "sources": [
+        {
+          "name": "TF1 Info — contexte de l’incident (12 octobre 2026)",
+          "url": "https://www.tf1info.fr/justice-faits-divers/les-installations-frigorifiques-de-plusieurs-supermarches-victimes-d-une-cyberattaque-quel-est-le-logiciel-pirate-2469554.html"
+        }
+      ]
+    }
+  ],
   "e5": [],
   "pages": {
     "a-propos": {
