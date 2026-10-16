@@ -218,6 +218,41 @@
       },
       "files": [],
       "images": []
+    },
+    {
+      "id": "dmz-proxmox-opnsense",
+      "title": "Infrastructure LAN, WAN et DMZ — Proxmox et OPNsense",
+      "category": "Réseaux",
+      "tech": [
+        "Proxmox VE",
+        "OPNsense",
+        "Debian LXC",
+        "Nginx",
+        "NAT",
+        "HTTPS"
+      ],
+      "description": "TP réalisé avec Anatol TAING : segmentation réseau, filtrage et publication de deux serveurs web HTTP/HTTPS. Un dossier de neuf pages présente les captures et les tests.",
+      "status": "Réalisé et documenté",
+      "date": "2026-10-15",
+      "sections": {
+        "Contexte et réalisation collective": "Projet de formation dans le contexte M2L, réalisé par Roman COROBCA et Anatol TAING. Les captures et les tests du dossier datent des 14 et 15 octobre 2026.",
+        "Objectifs": "Segmenter une infrastructure en LAN, WAN et DMZ ; rendre les services web accessibles depuis les zones autorisées tout en bloquant les communications non prévues.",
+        "Architecture et outils": "Proxmox VE héberge le pare-feu OPNsense et deux serveurs Debian 12 en conteneurs LXC. Des bridges distincts isolent le LAN et la DMZ. Un client Windows permet les tests internes ; le réseau privé du campus sert de WAN de laboratoire.",
+        "Services et configurations": "DHCP et DNS pour le client LAN, translation NAT sortante, règles ordonnées et journalisées, puis redirections WAN TCP 80 vers WEB et TCP 443 vers WEB2. Nginx sert les pages web ; WEB2 utilise un certificat de test auto-signé et une redirection HTTP 301 vers HTTPS.",
+        "Problème rencontré et résolution": "Le service HTTP fonctionnait depuis le LAN mais expirait depuis le WAN. L’analyse des routes et des paquets a identifié un trajet retour incorrect lié à reply-to. Le réglage Disable reply-to sur la règle WAN concernée a permis d’obtenir une réponse HTTP 200 dans cette maquette.",
+        "Tests et résultats": "Le dossier rassemble T1 à T11 : attribution DHCP, accès HTTP interne et WAN, résolution DNS, accès sortants, blocages LAN/DMZ et DMZ/LAN, mise à jour Debian, accès HTTPS à WEB2 et redirection HTTP vers HTTPS. Les résultats observés sont détaillés dans le tableau de recette du PDF.",
+        "Compétences mobilisées": "Segmentation d’une infrastructure virtualisée ; routage, DHCP, NAT et filtrage ; administration web Linux ; certificat TLS de test ; diagnostic avec les journaux et captures réseau ; documentation et recette technique.",
+        "Périmètre et limites": "Il s’agit d’un laboratoire : le WAN privé ne prouve pas une publication sur Internet. Les serveurs sont des conteneurs, non des VM Debian complètes. La capture détaillée du certificat dans le navigateur reste à ajouter. Une mise en production demanderait notamment un certificat approuvé et un durcissement des règles. WEB2 désigne le deuxième serveur web, pas une interface WAN2."
+      },
+      "files": [
+        {
+          "name": "Télécharger le compte rendu du TP (PDF · 9 pages)",
+          "url": "documents/tp-lan-wan-dmz-proxmox.pdf"
+        }
+      ],
+      "images": [
+        "assets/tp-dmz-proxmox-architecture.png"
+      ]
     }
   ],
   "certifications": [
