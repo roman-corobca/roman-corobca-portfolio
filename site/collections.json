@@ -200,26 +200,6 @@
       "images": []
     },
     {
-      "id": "site-hub-immo",
-      "title": "Site internet — HUB IMMO",
-      "category": "Développement",
-      "tech": [
-        "PHP",
-        "HTML",
-        "CSS"
-      ],
-      "description": "Projet de site internet réalisé en alternance chez HUB IMMO en 2025.",
-      "status": "Réalisé · documentation à compléter",
-      "date": "2025",
-      "sections": {
-        "Contexte": "Alternance — HUB IMMO, 2025.",
-        "Technologies": "PHP, HTML et CSS.",
-        "Documentation": "Les fonctionnalités, captures et documents autorisés seront précisés ultérieurement."
-      },
-      "files": [],
-      "images": []
-    },
-    {
       "id": "dmz-proxmox-opnsense",
       "title": "Infrastructure LAN, WAN et DMZ — Proxmox et OPNsense",
       "category": "Réseaux",
