@@ -263,30 +263,90 @@
     }
   ],
   "watch": [
-    {
-      "id": "refrigeration-supermarches-20261012",
-      "title": "Réfrigérateurs de supermarchés piratés : le risque dépasse les données",
-      "category": "Cybersécurité · Systèmes industriels et objets connectés",
-      "date": "2026-10-12",
-      "updated": "2026-10-13",
-      "consulted": "2026-10-14",
-      "week": "2026-10-12",
-      "source": "CERT-FR / ANSSI",
-      "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/",
-      "summary": "Des magasins de plusieurs enseignes, dont Intermarché, ont subi une perturbation de leurs installations frigorifiques dans la nuit du 11 au 12 octobre 2026. TF1 Info rapporte une cyberattaque et des pertes de produits. Cela ne signifie pas que tous les magasins de ces enseignes ont été touchés.",
-      "technical": "Le CERT-FR confirme des compromissions de contrôleurs de réfrigération Danfoss AK-SM/AK-SC et Copeland/Dixell XWEB. Ces équipements permettent la gestion à distance. Une interface d’administration exposée à Internet met le fonctionnement physique en danger. L’alerte officielle ne précise pas un mécanisme unique d’intrusion pour tous les cas.",
-      "actions": "Inventorier les contrôleurs et retirer leur accès direct depuis Internet, en coordination avec le frigoriste et après vérification des contrats d’assurance. Contrôler les paramètres, notamment le dégivrage. Protéger l’accès distant par VPN ou réseau sécurisé. Appliquer les recommandations du constructeur : firmware, mots de passe et configuration. Pour un équipement compromis, prévoir restauration et reconfiguration ; une réinitialisation seule ne corrige pas l’exposition ni la fin de support.",
-      "impact": "L’article de TF1 Info décrit des conséquences sur la chaîne du froid et les marchandises. Pour une entreprise, un incident informatique peut donc interrompre l’activité et entraîner des pertes matérielles. Il faut prévoir la continuité du service avec les équipes techniques et les prestataires.",
-      "analysis": "Analyse proposée : ce cas illustre le lien entre systèmes, réseaux et sécurité des équipements connectés. Dans un environnement comme celui de HUB IMMO, je retiens l’importance de limiter les accès distants et de vérifier les configurations. La supervision et la segmentation constituent aussi des pistes de prévention à étudier, sans supposer une infrastructure identique à celle des supermarchés.",
-      "sources": [
-        {
-          "name": "TF1 Info — contexte de l’incident (12 octobre 2026)",
-          "url": "https://www.tf1info.fr/justice-faits-divers/les-installations-frigorifiques-de-plusieurs-supermarches-victimes-d-une-cyberattaque-quel-est-le-logiciel-pirate-2469554.html"
-        }
-      ],
-      "published": "2026-10-14"
-    }
-  ],
+  {
+    "id": "refrigeration-supermarches-20261012",
+    "title": "Réfrigérateurs de supermarchés piratés : le risque dépasse les données",
+    "category": "Cybersécurité · Systèmes industriels et objets connectés",
+    "date": "2026-10-12",
+    "updated": "2026-10-13",
+    "consulted": "2026-10-14",
+    "week": "2026-10-12",
+    "source": "CERT-FR / ANSSI",
+    "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/",
+    "summary": "Des magasins de plusieurs enseignes, dont Intermarché, ont subi une perturbation de leurs installations frigorifiques dans la nuit du 11 au 12 octobre 2026. TF1 Info rapporte une cyberattaque et des pertes de produits. Cela ne signifie pas que tous les magasins de ces enseignes ont été touchés.",
+    "technical": "Le CERT-FR confirme des compromissions de contrôleurs de réfrigération Danfoss AK-SM/AK-SC et Copeland/Dixell XWEB. Ces équipements permettent la gestion à distance. Une interface d’administration exposée à Internet met le fonctionnement physique en danger. L’alerte officielle ne précise pas un mécanisme unique d’intrusion pour tous les cas.",
+    "actions": "Inventorier les contrôleurs et retirer leur accès direct depuis Internet, en coordination avec le frigoriste et après vérification des contrats d’assurance. Contrôler les paramètres, notamment le dégivrage. Protéger l’accès distant par VPN ou réseau sécurisé. Appliquer les recommandations du constructeur : firmware, mots de passe et configuration. Pour un équipement compromis, prévoir restauration et reconfiguration ; une réinitialisation seule ne corrige pas l’exposition ni la fin de support.",
+    "impact": "L’article de TF1 Info décrit des conséquences sur la chaîne du froid et les marchandises. Pour une entreprise, un incident informatique peut donc interrompre l’activité et entraîner des pertes matérielles. Il faut prévoir la continuité du service avec les équipes techniques et les prestataires.",
+    "analysis": "Analyse proposée : ce cas illustre le lien entre systèmes, réseaux et sécurité des équipements connectés. Dans un environnement comme celui de HUB IMMO, je retiens l’importance de limiter les accès distants et de vérifier les configurations. La supervision et la segmentation constituent aussi des pistes de prévention à étudier, sans supposer une infrastructure identique à celle des supermarchés.",
+    "sources": [
+      {
+        "name": "TF1 Info — contexte de l’incident (12 octobre 2026)",
+        "url": "https://www.tf1info.fr/justice-faits-divers/les-installations-frigorifiques-de-plusieurs-supermarches-victimes-d-une-cyberattaque-quel-est-le-logiciel-pirate-2469554.html"
+      }
+    ],
+    "published": "2026-10-14"
+  },
+  {
+    "consulted": "2026-10-20",
+    "published": "2026-10-20",
+    "week": "2026-10-19",
+    "id": "ubuntu-noyau-certfr-1333-20261016",
+    "title": "Ubuntu : vérifier les noyaux avant de déployer les correctifs",
+    "date": "2026-10-16",
+    "source": "CERT-FR / ANSSI",
+    "url": "https://cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1333/",
+    "category": "Systèmes · Linux",
+    "summary": "Synthèse préparée pour révision : le CERT-FR regroupe plusieurs vulnérabilités du noyau Ubuntu. Les versions, paquets et conséquences varient selon les failles.",
+    "technical": "L’avis couvre notamment Ubuntu 22.04, 24.04 et 26.04 LTS ainsi que des branches ESM. Certaines failles permettent une élévation de privilèges, une exécution de code ou une atteinte à la confidentialité ; toutes ne concernent pas chaque configuration.",
+    "impact": "Des serveurs non corrigés peuvent exposer les services et les données hébergées. La maintenance doit tenir compte de la disponibilité des applications.",
+    "actions": "Relever la version Ubuntu et le noyau actif, identifier les avis Ubuntu correspondant aux paquets installés, appliquer les correctifs adaptés et prévoir le redémarrage nécessaire. Vérifier ensuite le noyau chargé et les services. Ces étapes opérationnelles sont proposées pour préparer une procédure SISR."
+  },
+  {
+    "consulted": "2026-10-20",
+    "published": "2026-10-20",
+    "week": "2026-10-19",
+    "id": "ivanti-ics-certfr-ale013-20261014",
+    "title": "VPN Ivanti : traiter une faille activement exploitée",
+    "date": "2026-10-14",
+    "source": "CERT-FR / ANSSI",
+    "url": "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-013/",
+    "category": "Accès distants · Réseaux",
+    "summary": "Synthèse préparée pour révision : l’alerte CERT-FR confirme l’exploitation active de CVE-2026-104935 dans Ivanti Connect Secure, selon l’éditeur.",
+    "technical": "Sont notamment affectées les branches 22.8Rx avant 22.8R2.5, 25.1.1.x avant 25.1.1.2 et 25.1.3.x avant 25.1.3.1. La faille peut permettre exécution de code, élévation de privilèges et contournement de sécurité.",
+    "impact": "Une passerelle compromise menace les accès internes et les secrets d’authentification. Le CERT-FR signale des déplacements latéraux utilisant des secrets LDAP ou Active Directory.",
+    "actions": "Suivre l’alerte : isoler l’équipement, conserver journaux et preuves, rechercher la compromission et vérifier les versions corrigées. En cas de compromission, renouveler les secrets et certificats exposés et rechercher les déplacements latéraux. Organiser les contrôles avec l’équipe de réponse à incident, car certains outils interrompent le service."
+  },
+  {
+    "consulted": "2026-10-20",
+    "published": "2026-10-20",
+    "week": "2026-10-19",
+    "id": "cisco-email-cve202676519-20261014",
+    "title": "Cisco Secure Email : corriger l’analyseur de pièces jointes",
+    "date": "2026-10-14",
+    "source": "Cisco PSIRT",
+    "url": "https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-esa-afw-zqYJkjxp",
+    "category": "Messagerie · Protection des données",
+    "summary": "Synthèse préparée pour révision : CVE-2026-76519 affecte certaines passerelles Cisco Secure Email avec File Reputation activé et un composant Content Scanner Tools vulnérable.",
+    "technical": "Une pièce jointe spécialement conçue peut permettre à un attaquant distant non authentifié d’écrire des fichiers et d’exécuter des commandes avec les privilèges root. Content Scanner Tools antérieur à 25.3.0.5525 fait partie des conditions d’exposition.",
+    "impact": "La compromission d’une passerelle de sécurité peut menacer les communications et d’autres membres du cluster. Une mise à jour ne remplace pas l’analyse d’un équipement déjà compromis.",
+    "actions": "Contrôler les versions et les politiques AMP, appliquer Content Scanner Tools 25.3.0.5525 ou ultérieur et la version AsyncOS corrigée adaptée. Rechercher les indicateurs et recouper les journaux externes. En cas de soupçon, préserver les preuves avant la remédiation et suivre la procédure Cisco."
+  },
+  {
+    "consulted": "2026-10-20",
+    "published": "2026-10-20",
+    "week": "2026-10-19",
+    "id": "windows-correctifs-certfr1314-20261014",
+    "title": "Windows : prioriser les correctifs et contrôler leur déploiement",
+    "date": "2026-10-14",
+    "source": "CERT-FR / ANSSI",
+    "url": "https://cert.cyber.gouv.fr/avis/CERTFR-2026-AVI-1314/",
+    "category": "Systèmes · Gestion des correctifs",
+    "summary": "Synthèse préparée pour révision : l’avis CERT-FR du 14 octobre reprend les bulletins Microsoft du 13 octobre et signale CVE-2026-96951 comme activement exploitée selon Microsoft.",
+    "technical": "L’avis regroupe plusieurs failles Windows pouvant, selon le composant, permettre exécution de code à distance, élévation de privilèges ou déni de service. Ces effets ne doivent pas être attribués indistinctement à la seule CVE-2026-96951.",
+    "impact": "Des postes ou serveurs non corrigés peuvent exposer les utilisateurs et les services. Le suivi des échecs d’installation et des redémarrages fait partie du maintien en condition de sécurité.",
+    "actions": "Inventorier les versions concernées, consulter les correctifs Microsoft correspondants, tester leur compatibilité puis déployer en priorité sur les systèmes exposés. Contrôler les mises à jour réellement installées et les redémarrages en attente. Cette démarche est proposée comme piste de travail SISR."
+  }
+],
   "e5": [],
   "pages": {
     "a-propos": {
