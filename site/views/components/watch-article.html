@@ -3,10 +3,15 @@
   <div class="watch-headline-body">
     <p class="eyebrow" data-text="category" data-if="category"></p>
     <p data-text="summary"></p>
+    <section data-if="attack_type"><h4>Type d’attaque</h4><p data-text="attack_type"></p></section>
+    <section data-if="attack_status"><h4>Ce qui est confirmé</h4><p data-text="attack_status"></p></section>
+    <section data-if="attack_method"><h4>Comment l’attaque fonctionne</h4><p data-text="attack_method"></p></section>
     <section data-if="actions">
       <h4>Comment se protéger</h4>
       <p data-text="actions"></p>
     </section>
+    <section data-if="mitigation"><h4>Réduire temporairement le risque</h4><p data-text="mitigation"></p></section>
+    <section data-if="response"><h4>Que faire en cas d’incident</h4><p data-text="response"></p></section>
     <section data-if="technical">
       <h4>Comprendre la menace</h4>
       <p data-text="technical"></p>
