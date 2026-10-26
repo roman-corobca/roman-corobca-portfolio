@@ -421,6 +421,46 @@
       "attack_status": "Exploitation active signalée par Ivanti et relayée par le CERT-FR ; déplacements latéraux constatés.",
       "mitigation": "En l’absence de correctif, contacter Ivanti et déconnecter l’équipement d’Internet si possible. Une limitation d’exposition ne garantit pas l’absence de compromission.",
       "response": "Isoler l’équipement, préserver les preuves puis appliquer la remédiation adaptée. Renouveler les secrets et certificats exposés et rechercher les déplacements latéraux. Une mise à jour seule ne suffit pas à traiter un incident."
+    },
+    {
+      "consulted": "2026-10-26",
+      "published": "2026-10-26",
+      "week": "2026-10-26",
+      "id": "pk-softech-publica-attaque-20261023",
+      "title": "PK Softech : des données de caisses de pension volées chez un fournisseur",
+      "date": "2026-10-23",
+      "source": "PFPDT — autorité suisse de protection des données",
+      "url": "https://www.edoeb.admin.ch/fr/pfpdt-investigations-suite-a-cyberattaque-fournisseur-de-logiciel",
+      "category": "Cyberattaque réelle · Vol de données",
+      "summary": "Des données de plusieurs institutions de prévoyance, dont Publica, ont été volées lors d’une attaque visant PK Softech.",
+      "attack_type": "Compromission d’un prestataire et vol de données.",
+      "attack_status": "L’autorité confirme le vol et l’ouverture d’une enquête formelle le 22 octobre. L’étendue des données reste à établir.",
+      "attack_method": "Le point d’entrée et les moyens techniques ne sont pas précisés dans le communiqué. Aucun ransomware ne peut être affirmé sur cette seule source.",
+      "technical": "Le cas illustre une exposition des clients à travers les données confiées à un fournisseur.",
+      "impact": "Atteinte à la confidentialité et nécessité d’évaluer les conséquences pour les personnes concernées.",
+      "actions": "Pistes de prévention proposées : limiter les données confiées aux prestataires, contrôler leurs accès et tracer les échanges.",
+      "response": "Recommandations : identifier les données exposées, conserver les preuves et coordonner l’information des personnes avec les responsables compétents.",
+      "skills": "Synthèse préparée pour révision : gestion des prestataires, protection des données et réponse à incident."
+    },
+    {
+      "consulted": "2026-10-26",
+      "published": "2026-10-26",
+      "week": "2026-10-26",
+      "id": "fisher-paykel-messagerie-20261022",
+      "title": "Fisher & Paykel Healthcare : deux comptes de messagerie compromis",
+      "date": "2026-10-22",
+      "source": "Fisher & Paykel Healthcare — communiqué publié sur NZX",
+      "url": "https://www.nzx.com/announcements/482175",
+      "category": "Cyberattaque réelle · Comptes et fichiers",
+      "summary": "L’entreprise signale un accès non autorisé à deux comptes de messagerie et à certains fichiers.",
+      "attack_type": "Compromission de comptes et accès illégitime à des fichiers.",
+      "attack_status": "Communiqué daté du 22 octobre (affichage NZX : 21 octobre). Certains fichiers contenaient des données personnelles ; aucune preuve de ransomware ou de malware n’est signalée.",
+      "attack_method": "La méthode d’intrusion n’est pas publiée : il serait incorrect d’affirmer qu’il s’agit de phishing.",
+      "technical": "Un compte compromis peut donner accès aux ressources autorisées à son titulaire ; ce mécanisme général ne démontre pas le chemin exact de cet incident.",
+      "impact": "Selon l’entreprise, pas d’impact sur la production ni la chaîne logistique, et pas de preuve de compromission du système de données patients.",
+      "actions": "Prévention proposée : authentification multifacteur, droits limités et surveillance des connexions inhabituelles.",
+      "response": "L’entreprise indique avoir activé sa réponse et informé les autorités. En pratique : révoquer les sessions suspectes, examiner les journaux et sécuriser les comptes.",
+      "skills": "Synthèse préparée pour révision : sécurisation des identités et distinction entre faits confirmés et hypothèses."
     }
   ],
   "e5": [],
@@ -601,4 +641,3 @@
   },
   "levels": {}
 }
-
