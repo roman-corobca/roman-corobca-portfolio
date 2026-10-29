@@ -45,7 +45,7 @@ export function viewContext(data) {
     featuredDetails: featuredProject ? textFields(featuredProject.sections).filter(field => detailNames.includes(field.title)) : [],
     additionalProjects: newestFirst(data.projects.filter(project =>
       project.id !== 'leboncoin-groupe' && project.status !== 'À compléter'
-      && (project.files?.length || project.images?.length || textFields(project.sections).length))),
+      && (project.files?.length || project.images?.length))),
     watchCurrent,
     watchArchive: articles.filter(article => !currentIds.has(article.id))
   };

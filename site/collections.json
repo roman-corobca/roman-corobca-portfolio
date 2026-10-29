@@ -12,26 +12,38 @@
   "projects": [
     {
       "id": "active-directory",
-      "title": "Active Directory",
+      "title": "Active Directory M2L - annuaire, droits et GPO",
       "category": "Systèmes",
       "tech": [
-        "Windows Server",
+        "Windows Server 2022",
         "Active Directory",
-        "GPO"
+        "DNS",
+        "GPO",
+        "PowerShell",
+        "VMware",
+        "pfSense"
       ],
-      "description": "Emplacement pour documenter un domaine, les comptes, les groupes et les stratégies.",
-      "status": "À compléter",
-      "date": "",
+      "description": "Laboratoire réalisé les 28 et 29 octobre : organisation de l’annuaire, partages sécurisés, GPO, délégation et diagnostic. Présentation illustrée de 22 pages.",
+      "status": "Réalisé et documenté",
+      "date": "2026-10-29",
       "sections": {
-        "Objectifs": "",
-        "Architecture": "",
-        "Configuration du domaine": "",
-        "Utilisateurs, groupes et stratégies": "",
-        "Sécurité et tests": "",
-        "Captures et documentation": ""
+        "Contexte et réalisation": "Projet pédagogique M2L réalisé par Roman COROBCA et Anatol TAING. Le dossier présente les travaux collectifs sans attribuer artificiellement les tâches. Quatre services : Direction, Comptabilite, Commercial et DSI.",
+        "Architecture": "VMware Workstation : pfSense (LAN 192.168.10.1/24), SRV-AD01 Windows Server 2022 (192.168.10.10) et CLIENT-01 Windows 11 (192.168.10.20). Le client utilise le DNS du domaine m2l.lan. Le logiciel affiché par la console est pfSense, malgré le nom OPNsense-M2L de la VM.",
+        "Annuaire et habilitations": "Onze OU protégées contre la suppression accidentelle ; huit comptes activés répartis en quatre services ; groupes globaux et de domaine local selon UGDLP. GG_M2L_Tous centralise les membres pour l’accès à Commun.",
+        "Partages et sécurité": "Cinq partages SMB ; ACL NTFS finales contrôlées, modification par service et lecture transverse de la Direction. Dossier Direction_Prive protégé et masqué par l’énumération basée sur les accès.",
+        "GPO et administration": "Lecteur K pour Commun et S selon le service ; restrictions ciblées ; verrouillage après 600 secondes ; stockage amovible refusé. Politique de domaine et PSO renforcée pour la DSI. Délégation de réinitialisation limitée à trois OU ; outils RSAT installés sur le client.",
+        "Diagnostic et validation": "Correction de la connectivité vers la passerelle et du DNS externe, réparation DISM puis installation de RSAT. Tests positifs et négatifs des accès, du filtrage GPO et de la délégation ; commandes gpresult, icacls et Get-SmbShareAccess.",
+        "Limites": "Title reste vide ; snapshots initiaux non documentés ; absence d’audit exhaustif des ACL de tous les descendants et de recette complète après chaque modification. Une entrée Admins du domaine du filtrage GPO reste à examiner. Les résultats sont ceux d’un laboratoire, soumis à la validation pédagogique du formateur."
       },
-      "files": [],
-      "images": []
+      "files": [
+        {
+          "name": "Télécharger le dossier détaillé AD M2L (PDF · 22 pages)",
+          "url": "documents/presentation-active-directory-m2l.pdf"
+        }
+      ],
+      "images": [
+        "assets/ad-m2l-annuaire.png"
+      ]
     },
     {
       "id": "glpi",
