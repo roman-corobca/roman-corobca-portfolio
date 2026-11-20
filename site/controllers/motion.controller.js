@@ -42,9 +42,11 @@
     for (const [el, state] of states) {
       if (!main.contains(el)) { state.animation?.cancel(); states.delete(el); }
     }
-    if (preference.matches) return;
+    if (preference.matches) { document.documentElement.classList.remove('motion-pending'); return; }
     observer = new IntersectionObserver(entries => {
       let step = 0;
+      // Pages pré-rendues : les éléments animés restent masqués jusqu’à ce premier passage.
+      const pending = document.documentElement.classList.contains('motion-pending');
       for (const entry of entries) {
         const state = states.get(entry.target);
         if (!state) continue;
@@ -55,6 +57,7 @@
           transition(entry.target, false);
         }
       }
+      if (pending) document.documentElement.classList.remove('motion-pending');
     }, { threshold: [0, .08, .18], rootMargin: '0px 0px -12px 0px' });
     main.querySelectorAll(selector).forEach((el, index) => {
       if (!states.has(el)) {
@@ -65,6 +68,7 @@
       }
       observer.observe(el);
     });
+    if (!states.size) document.documentElement.classList.remove('motion-pending');
     main.querySelectorAll('.refined-fold, .watch-headline').forEach(el => {
       if (el.dataset.motionBound) return;
       el.dataset.motionBound = 'true';
