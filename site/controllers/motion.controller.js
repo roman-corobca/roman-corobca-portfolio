@@ -1,10 +1,9 @@
-// Entrées et sorties latérales ; aucun masquage si les animations sont indisponibles.
+// Apparition douce des blocs, une seule fois, au premier passage à l’écran.
+// Aucun masquage si les animations sont indisponibles ou désactivées par l’utilisateur.
 (() => {
   const main = document.querySelector('main');
   const preference = matchMedia('(prefers-reduced-motion: reduce)');
   if (!main || !Element.prototype.animate || !('IntersectionObserver' in window)) return;
-  const states = new Map();
-  let observer;
   const selector = [
     '.hero-copy > .eyebrow', '.hero-copy > h1', '.hero-subtitle',
     '.hero-description', '.hero-copy > .actions', '.hero-contact',
@@ -16,79 +15,77 @@
     '.exam-overview > article', '.preparation-note', '.certificate-card',
     '.contact-method', '.contact-cv', '.watch-headline'
   ].join(',');
-  function transition(el, show, delay = 0) {
-    const state = states.get(el);
-    if (!state || state.visible === show || preference.matches) return;
-    const distance = innerWidth < 760 ? 28 : 60;
-    const from = state.visible === null
-      ? { opacity: 0, transform: `translateX(${state.side * distance}px)` }
-      : { opacity: getComputedStyle(el).opacity, transform: getComputedStyle(el).transform };
-    state.animation?.cancel();
-    state.visible = show;
-    el.dataset.motionState = show ? 'entering' : 'leaving';
-    state.animation = el.animate([from,
-      { opacity: show ? 1 : 0, transform: `translateX(${show ? 0 : state.side * distance}px)` }
-    ], { duration: show ? 640 : 340, delay: show ? delay : 0,
-      easing: 'cubic-bezier(.2,.7,.25,1)', fill: 'both' });
-    const animation = state.animation;
-    animation.finished.then(() => {
-      if (state.animation !== animation) return;
-      el.dataset.motionState = show ? 'visible' : 'outside';
-      if (show) { animation.cancel(); state.animation = null; }
-    }, () => {});
+  const easing = 'cubic-bezier(.22,.61,.36,1)';
+  let observer;
+
+  function reveal(el, delay = 0, duration = 520) {
+    if (el.dataset.motionState !== 'pending') return;
+    el.dataset.motionState = 'visible';
+    observer?.unobserve(el);
+    el.animate([
+      { opacity: 0, transform: 'translateY(18px)' },
+      { opacity: 1, transform: 'none' }
+    ], { duration, delay, easing, fill: 'backwards' });
   }
+
   function prepare() {
     observer?.disconnect();
-    for (const [el, state] of states) {
-      if (!main.contains(el)) { state.animation?.cancel(); states.delete(el); }
-    }
     if (preference.matches) return;
     observer = new IntersectionObserver(entries => {
       let step = 0;
       for (const entry of entries) {
-        const state = states.get(entry.target);
-        if (!state) continue;
-        if (entry.isIntersecting && entry.intersectionRatio >= .18) {
-          transition(entry.target, true, Math.min(step++ * 55, 220));
-        } else if (state.visible === true && entry.intersectionRatio <= .08
-          && !entry.target.contains(document.activeElement)) {
-          transition(entry.target, false);
-        }
+        if (entry.isIntersecting) reveal(entry.target, Math.min(step++ * 60, 240));
       }
-    }, { threshold: [0, .08, .18], rootMargin: '0px 0px -12px 0px' });
-    main.querySelectorAll(selector).forEach((el, index) => {
-      if (!states.has(el)) {
-        const side = el.closest('.hero-copy') ? -1
-          : el.classList.contains('portrait-panel') ? 1 : index % 2 ? 1 : -1;
-        states.set(el, { visible: null, side, animation: null });
-        el.dataset.motionSide = side < 0 ? 'left' : 'right';
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    const fold = innerHeight;
+    let step = 0;
+    main.querySelectorAll(selector).forEach(el => {
+      if (el.dataset.motionState) {
+        if (el.dataset.motionState === 'pending') observer.observe(el);
+        return;
       }
-      observer.observe(el);
+      const box = el.getBoundingClientRect();
+      if (box.bottom < 0) { el.dataset.motionState = 'visible'; return; }
+      el.dataset.motionState = 'pending';
+      // Ce qui est déjà à l’écran apparaît tout de suite, en léger décalé.
+      if (box.top < fold && box.height) reveal(el, Math.min(step++ * 40, 160), 400);
+      else observer.observe(el);
     });
     main.querySelectorAll('.refined-fold, .watch-headline').forEach(el => {
       if (el.dataset.motionBound) return;
       el.dataset.motionBound = 'true';
       el.addEventListener('toggle', () => {
         if (!el.open || preference.matches) return;
-        const body = el.querySelector('.fold-content, .watch-headline-body');
-        body?.animate([{ opacity: 0, transform: 'translateX(-12px)' },
-          { opacity: 1, transform: 'translateX(0)' }], { duration: 280, easing: 'ease-out' });
+        el.querySelector('.fold-content, .watch-headline-body')?.animate(
+          [{ opacity: 0, transform: 'translateY(-6px)' }, { opacity: 1, transform: 'none' }],
+          { duration: 260, easing });
       });
     });
   }
-  main.addEventListener('focusin', event => {
-    for (const [el, state] of states) {
-      if (el.contains(event.target) && state.visible === false) transition(el, true);
-    }
-  });
-  new MutationObserver(prepare).observe(main, { childList: true });
-  if (main.children.length) prepare();
-  preference.addEventListener('change', () => {
+
+  function showAll() {
     observer?.disconnect();
-    for (const [el, state] of states) {
-      state.animation?.cancel(); state.animation = null; state.visible = null;
-      el.removeAttribute('data-motion-state');
-    }
-    if (!preference.matches) prepare();
+    main.querySelectorAll('[data-motion-state="pending"]').forEach(el => { el.dataset.motionState = 'visible'; });
+  }
+
+  // Un élément atteint au clavier ou par une ancre s’affiche immédiatement.
+  main.addEventListener('focusin', event => {
+    const el = event.target.closest('[data-motion-state="pending"]');
+    if (el) reveal(el);
   });
+  addEventListener('hashchange', () => {
+    let target;
+    try { target = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch { return; }
+    const el = target?.closest('[data-motion-state="pending"]');
+    if (el) reveal(el);
+  });
+  addEventListener('beforeprint', showAll);
+  let queued = false;
+  new MutationObserver(() => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => { queued = false; prepare(); });
+  }).observe(main, { childList: true, subtree: true });
+  if (main.children.length) prepare();
+  preference.addEventListener('change', () => (preference.matches ? showAll() : prepare()));
 })();

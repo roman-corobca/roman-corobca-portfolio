@@ -5,7 +5,7 @@ const templates = new Map();
 
 export async function loadView(path) {
   if (!templates.has(path)) {
-    templates.set(path, fetch(new URL(`../views/${path}`, import.meta.url), { cache: 'no-cache' })
+    templates.set(path, fetch(new URL(`../views/${path}`, import.meta.url))
       .then(response => {
         if (!response.ok) throw new Error(`Vue introuvable : ${path}`);
         return response.text();
