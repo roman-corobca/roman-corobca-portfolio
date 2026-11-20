@@ -17,6 +17,26 @@ export function bindCv(main) {
   });
 }
 
+// Thème clair par défaut ; le choix sombre est mémorisé dans le navigateur.
+export function bindTheme() {
+  const button = document.querySelector('[data-theme-toggle]');
+  if (!button) return;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  const apply = dark => {
+    if (dark) document.documentElement.dataset.theme = 'dark';
+    else delete document.documentElement.dataset.theme;
+    button.setAttribute('aria-pressed', String(dark));
+    button.setAttribute('aria-label', dark ? 'Activer le thème clair' : 'Activer le thème sombre');
+    meta?.setAttribute('content', dark ? '#171311' : '#fbf7f2');
+  };
+  apply(document.documentElement.dataset.theme === 'dark');
+  button.addEventListener('click', () => {
+    const dark = document.documentElement.dataset.theme !== 'dark';
+    apply(dark);
+    try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch { /* stockage indisponible */ }
+  });
+}
+
 export function revealHash(main) {
   let id;
   try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
