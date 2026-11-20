@@ -1,7 +1,7 @@
 import { loadPortfolio, loadRoutes, viewContext } from '../models/portfolio.model.js';
 import { renderInto } from './view.controller.js';
 import { renderCollections, renderSelectedProject } from './content.controller.js';
-import { bindCv, bindNavigation, revealHash } from './interactions.controller.js';
+import { bindCv, bindNavigation, bindTheme, revealHash } from './interactions.controller.js';
 import './motion.controller.js';
 
 const main = document.querySelector('main');
@@ -11,6 +11,7 @@ async function boot() {
   // Page pré-rendue par scripts/build.mjs : le contenu est déjà là, seules les interactions sont branchées.
   if (main.dataset.rendered === 'static') {
     bindCv(main);
+    bindTheme();
     bindNavigation(main, key);
     revealHash(main);
     return;
@@ -41,6 +42,7 @@ async function boot() {
     else await renderCollections(main, context);
     document.title = `${selectedProject?.title || title} | roman-corobca-portfolio`;
     bindCv(main);
+    bindTheme();
     bindNavigation(main, key);
     revealHash(main);
   } catch (error) {

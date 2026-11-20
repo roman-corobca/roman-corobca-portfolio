@@ -1,0 +1,287 @@
+/* Thème clair chaleureux (par défaut) et confort de lecture.
+   Le thème sombre d’origine s’applique quand <html data-theme="dark"> (bouton soleil/lune). */
+
+/* ---------- Confort de lecture : les deux thèmes ---------- */
+body {
+  font-size:16px
+}
+p {
+  line-height:1.7
+}
+.five-pages-nav {
+  display:flex;
+  align-items:center;
+  font-size:14.5px
+}
+.five-pages-nav>a {
+  padding:10px 0
+}
+details.menu>summary {
+  list-style:none;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  min-height:42px;
+  padding:8px 14px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  font-weight:700;
+  font-size:14px
+}
+details.menu>summary::-webkit-details-marker {
+  display:none
+}
+details.menu>summary .ui-icon {
+  width:18px;
+  height:18px
+}
+.five-pages-nav {
+  position:relative
+}
+.five-pages-nav details.menu {
+  position:static
+}
+details.menu[open] .dropdown {
+  top:52px;
+  right:0;
+  width:min(340px,calc(100vw - 32px));
+  padding:8px;
+  border-radius:14px
+}
+.dropdown a {
+  padding:12px 14px;
+  border-radius:9px;
+  font-size:15px;
+  font-weight:600
+}
+.dropdown a:hover,.dropdown a[aria-current=page] {
+  background:color-mix(in srgb,var(--orange) 12%,transparent);
+  color:var(--orange)
+}
+.theme-toggle {
+  display:inline-grid;
+  place-items:center;
+  width:42px;
+  height:42px;
+  margin-left:4px;
+  border:1px solid var(--line);
+  border-radius:50%;
+  background:transparent;
+  color:var(--text);
+  cursor:pointer;
+  flex:none
+}
+.theme-toggle:hover {
+  border-color:var(--orange);
+  color:var(--orange)
+}
+.theme-toggle svg {
+  width:19px;
+  height:19px
+}
+.theme-toggle [data-theme-icon=sun] {
+  display:none
+}
+html[data-theme=dark] .theme-toggle [data-theme-icon=sun] {
+  display:block
+}
+html[data-theme=dark] .theme-toggle [data-theme-icon=moon] {
+  display:none
+}
+:focus-visible {
+  outline:2px solid var(--orange);
+  outline-offset:3px
+}
+.refined-fold>summary {
+  min-height:48px
+}
+@media(max-width:760px) {
+  .btn {
+    min-height:46px
+  }
+}
+
+/* ---------- Thème clair ---------- */
+html:not([data-theme=dark]) {
+  --bg:#fbf7f2;
+  --panel:#ffffff;
+  --line:#e7dacc;
+  --text:#2a1e16;
+  --muted:#6a5446;
+  --orange:#b04e0c;
+  --cyan:#b04e0c;
+  color-scheme:light
+}
+html[data-theme=dark] {
+  color-scheme:dark
+}
+html:not([data-theme=dark]) body {
+  background:radial-gradient(ellipse at 8% 0%,#ffd9b833,transparent 40%),radial-gradient(ellipse at 100% 30%,#ffe6cf55,transparent 42%),linear-gradient(160deg,#fdfaf6,#f8f1e9 60%,#fbf4ec);
+  background-attachment:fixed;
+  color:var(--text)
+}
+html:not([data-theme=dark]) header {
+  background:#fbf7f2e8;
+  border-color:var(--line);
+  box-shadow:0 6px 24px #6b3b1408
+}
+html:not([data-theme=dark]) .five-pages-nav>a {
+  color:#5a463a
+}
+html:not([data-theme=dark]) .five-pages-nav>a:hover,
+html:not([data-theme=dark]) .five-pages-nav>a[aria-current=page] {
+  color:var(--orange)
+}
+html:not([data-theme=dark]) details.menu[open] .dropdown {
+  box-shadow:0 18px 50px #5a32141f
+}
+html:not([data-theme=dark]) p,
+html:not([data-theme=dark]) .current-journey p,
+html:not([data-theme=dark]) .section-intro,
+html:not([data-theme=dark]) .hero-description {
+  color:var(--muted)
+}
+html:not([data-theme=dark]) .btn {
+  color:var(--text)
+}
+html:not([data-theme=dark]) .btn:not(.primary) {
+  background:#ffffffcc;
+  border-color:#dccbbb
+}
+html:not([data-theme=dark]) .btn:not(.primary):hover {
+  background:#fff3e8;
+  border-color:var(--orange)
+}
+html:not([data-theme=dark]) .btn.primary {
+  background:#f7883f;
+  border-color:#f7883f;
+  color:#241104;
+  box-shadow:0 8px 22px #e5711d30
+}
+html:not([data-theme=dark]) .btn.primary:hover {
+  background:#ff9c5c;
+  color:#241104
+}
+html:not([data-theme=dark]) .portrait-panel {
+  background:linear-gradient(140deg,#ffe7d2,#fff8f1 65%);
+  border-color:#efc9a7;
+  box-shadow:0 24px 70px #8a4a1a1f
+}
+html:not([data-theme=dark]) .portrait-note {
+  border-color:#efd7c0
+}
+html:not([data-theme=dark]) .current-journey article {
+  border-color:#e3a272
+}
+html:not([data-theme=dark]) .refined-fold,
+html:not([data-theme=dark]) .watch-headline {
+  background:#ffffffd9;
+  border-color:var(--line)
+}
+html:not([data-theme=dark]) .refined-fold>summary {
+  color:var(--text)
+}
+html:not([data-theme=dark]) .refined-fold>summary:hover {
+  color:var(--orange)
+}
+html:not([data-theme=dark]) .fold-content .journey-step,
+html:not([data-theme=dark]) .journey-step article,
+html:not([data-theme=dark]) .card,
+html:not([data-theme=dark]) .field {
+  background:#fff;
+  border-color:var(--line);
+  box-shadow:0 6px 18px #6b3b140d
+}
+html:not([data-theme=dark]) .journey-step.is-current article,
+html:not([data-theme=dark]) .fold-content .journey-step.is-current {
+  border-color:#e3a272
+}
+html:not([data-theme=dark]) .card:hover {
+  border-color:#e09a63;
+  box-shadow:0 12px 28px #6b3b1418
+}
+html:not([data-theme=dark]) .journey-list:before {
+  background:#e3c3a6
+}
+html:not([data-theme=dark]) .direction-note {
+  background:#ffe9d6;
+  border-color:#e08a4c
+}
+html:not([data-theme=dark]) .focus-grid article,
+html:not([data-theme=dark]) .exam-overview article,
+html:not([data-theme=dark]) .preparation-note {
+  background:#fff;
+  border-color:var(--line)
+}
+html:not([data-theme=dark]) .architecture-case {
+  background:linear-gradient(120deg,#fff1e4,#ffffff);
+  border-color:#efcfb2
+}
+html:not([data-theme=dark]) .case-caption,
+html:not([data-theme=dark]) .architecture-connection,
+html:not([data-theme=dark]) .responsibility-grid article,
+html:not([data-theme=dark]) .rhythm-note {
+  border-color:#ead3bd
+}
+html:not([data-theme=dark]) .connection-line {
+  background:linear-gradient(90deg,#efc9a7,var(--orange),#efc9a7)
+}
+html:not([data-theme=dark]) .featured-project,
+html:not([data-theme=dark]) .portfolio-block {
+  background:#fff;
+  border-color:var(--line)
+}
+html:not([data-theme=dark]) .art {
+  background:#f6ece2
+}
+html:not([data-theme=dark]) .tag {
+  color:#a84a0c;
+  background:#ffefe1;
+  border-color:#f0cfb3
+}
+html:not([data-theme=dark]) .status {
+  color:#7a5226;
+  background:#fbf0dc;
+  border-color:#ead6b2
+}
+html:not([data-theme=dark]) .certificate-card {
+  background:linear-gradient(130deg,#fff3e7,#ffffff);
+  border-color:#efcfb2
+}
+html:not([data-theme=dark]) .certificate-check {
+  border-color:#e8b58c;
+  background:#fff
+}
+html:not([data-theme=dark]) .certificate-modules li {
+  border-color:var(--line)
+}
+html:not([data-theme=dark]) .contact-method {
+  background:linear-gradient(135deg,#fff1e4,#ffffff);
+  border-color:#efcfb2
+}
+html:not([data-theme=dark]) .contact-method:hover {
+  background:linear-gradient(135deg,#ffe6d0,#fff8f1);
+  border-color:var(--orange)
+}
+html:not([data-theme=dark]) .professional-qualities,
+html:not([data-theme=dark]) .notice,
+html:not([data-theme=dark]) .journey-next,
+html:not([data-theme=dark]) .mission-objective {
+  background:#fff1e4
+}
+html:not([data-theme=dark]) footer {
+  background:#f4ebe1;
+  color:var(--muted)
+}
+html:not([data-theme=dark]) .synthesis-table thead th {
+  background:#fff3e8
+}
+html:not([data-theme=dark]) ::selection {
+  background:#ffc89f;
+  color:#2a1e16
+}
+@media(max-width:760px) {
+  html:not([data-theme=dark]) .portrait-panel {
+    background:linear-gradient(120deg,#ffeedf,#fffaf5)
+  }
+}
