@@ -42,7 +42,7 @@
         }
       ],
       "images": [
-        "assets/ad-m2l-annuaire.png"
+        "assets/ad-m2l-annuaire.webp"
       ]
     },
     {
@@ -77,7 +77,7 @@
         }
       ],
       "images": [
-        "assets/glpi-m2l-tableau-de-bord.png"
+        "assets/glpi-m2l-tableau-de-bord.webp"
       ]
     },
     {
@@ -187,7 +187,7 @@
         }
       ],
       "images": [
-        "assets/leboncoin-catalogue.png"
+        "assets/leboncoin-catalogue.webp"
       ]
     },
     {
@@ -255,7 +255,7 @@
         }
       ],
       "images": [
-        "assets/tp-dmz-proxmox-architecture.png"
+        "assets/tp-dmz-proxmox-architecture.webp"
       ]
     }
   ],

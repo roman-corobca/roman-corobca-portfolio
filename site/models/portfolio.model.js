@@ -1,6 +1,6 @@
 /** Données du portfolio : une seule collection, sans copie de secours dans le code. */
 export async function loadPortfolio() {
-  const response = await fetch(new URL('../collections.json', import.meta.url), { cache: 'no-store' });
+  const response = await fetch(new URL('../collections.json', import.meta.url));
   if (!response.ok) throw new Error('Chargement des collections impossible.');
   const data = await response.json();
   for (const key of ['projects', 'certifications', 'watch', 'e5']) {
@@ -11,7 +11,7 @@ export async function loadPortfolio() {
 }
 
 export async function loadRoutes() {
-  const response = await fetch(new URL('./routes.json', import.meta.url), { cache: 'no-cache' });
+  const response = await fetch(new URL('./routes.json', import.meta.url));
   if (!response.ok) throw new Error('Chargement de la navigation impossible.');
   return response.json();
 }
