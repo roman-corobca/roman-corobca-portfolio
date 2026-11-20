@@ -7,9 +7,16 @@ import './motion.controller.js';
 const main = document.querySelector('main');
 
 async function boot() {
+  const key = (location.pathname.split('/').pop() || 'index.html').replace(/\.html$/, '');
+  // Page pré-rendue par scripts/build.mjs : le contenu est déjà là, seules les interactions sont branchées.
+  if (main.dataset.rendered === 'static') {
+    bindCv(main);
+    bindNavigation(main, key);
+    revealHash(main);
+    return;
+  }
   try {
     const routes = await loadRoutes();
-    const key = (location.pathname.split('/').pop() || 'index.html').replace(/\.html$/, '');
     if (routes.redirects[key]) { location.replace(routes.redirects[key]); return; }
     if (key === 'article') {
       const id = new URLSearchParams(location.search).get('id') || '';

@@ -33,9 +33,15 @@ Les vues utilisent des attributs `data-text`, `data-href`, `data-if` et des gaba
 
 Les projets supplémentaires documentés peuvent apparaître dans le catalogue et disposent d’une fiche `projet.html?id=IDENTIFIANT`. Les anciens chemins sont redirigés pour conserver les liens existants.
 
+## Pré-rendu
+
+`node scripts/build.mjs` (depuis la racine du dépôt) génère `dist/` : chaque page arrive déjà remplie, avec un titre, une description et des balises Open Graph propres. Chaque projet a sa page `projet-IDENTIFIANT.html` ; l’ancienne adresse `projet.html?id=IDENTIFIANT` y redirige. Les anciennes adresses de `models/routes.json` deviennent de petites pages de redirection. Le JavaScript détecte `data-rendered="static"` sur `<main>` et ne fait alors que brancher les interactions (menu, CV, ancres, animations).
+
+Aperçu local : `node scripts/build.mjs` puis `node scripts/serve.mjs dist 8080`.
+
 ## Hébergement
 
-Servir ce répertoire avec un serveur HTTP statique ou le publier sur GitHub Pages. L’ouverture directe en `file://` ne permet pas le chargement des vues et des collections.
+Le workflow GitHub Actions lance le pré-rendu puis publie `dist/`. Ce répertoire `site/` reste utilisable tel quel avec un serveur HTTP statique : le JavaScript rend alors les pages comme avant. L’ouverture directe en `file://` ne permet pas le chargement des vues et des collections.
 
 Le projet collectif Leboncoin est un téléchargement indépendant en PHP/MySQL. Son code ne fait pas partie du moteur du portfolio.
 

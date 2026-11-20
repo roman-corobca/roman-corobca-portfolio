@@ -4,7 +4,7 @@ Portfolio statique : accueil, épreuves, ateliers professionnels, veille, certif
 
 ## Publication
 
-Configurer GitHub Pages avec la source GitHub Actions. Chaque modification poussée sur main publie les fichiers du dossier site/. Le workflow utilise les actions officielles GitHub.
+Configurer GitHub Pages avec la source GitHub Actions. Chaque modification poussée sur main lance `node scripts/build.mjs`, qui génère les pages pré-remplies dans dist/, puis publie ce dossier. Le workflow utilise les actions officielles GitHub. Aperçu local : `node scripts/build.mjs` puis `node scripts/serve.mjs dist 8080`.
 
 ## Maintenance
 
